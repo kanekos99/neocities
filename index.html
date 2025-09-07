@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" type="text/css" href="home/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="common/styles/sidemenu.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
@@ -34,17 +35,19 @@
   </head>
 
   <body>
-    <div class="side-menu" id="side-menu">
+
+    <!--------------- Old side menu - can ignore ---------------->
+    <!-- <div class="side-menu" id="side-menu">
       <a class="side-menu-button" href="index.html"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Home</a
       >
-      <a class="side-menu-button" href="https://kanekos99.github.io/gallery/"
+      <a class="side-menu-button" href="gallery"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Gallery</a
       >
-      <a class="side-menu-button" href="dressup.html"
+      <a class="side-menu-button" href="dressup"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Dress Up Game</a
       >
-    </div>
+    </div> -->
 
     <div class="main-body" id="main-body">
       <div class="menu-icon-container">
@@ -111,10 +114,37 @@
                   <div
                     class="d-flex justify-content-center flex-wrap mb-3 mt-3"
                   >
-                    <a
-                      href="https://kanekos.neocities.org/dressup/"
-                      class="directory-img-box"
-                    >
+                    <a href="gallery" class="directory-img-box">
+                      <img
+                        src="./home/assets/gallery-preview.png"
+                        class="directory-img"
+                      />
+                    </a>
+                    <div class="directory-text-box row align-items-center">
+                      <h2 class="directory-text-heading">Kaneko's Gallery</h2>
+                      <p class="directory-text home-text">
+                        A simple art gallery site based off of Carrd, created
+                        because I hit the image upload limit on Carrd. Features
+                        mostly original character art but with a dedicated
+                        fanart section as well. Also available as a mirror on
+                        <b
+                          ><a href="https://kanekos99.github.io/gallery/"
+                            >Github Pages</a
+                          ></b
+                        >
+                        that I will update more often. <br /><br />
+                        <i><b>Warning:</b> Page has high image load!</i>
+                      </p>
+                      <a class="visit-btn ml-3 py-1" href="gallery">Visit</a>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <hr class="dotted-divider" />
+                  </div>
+                  <div
+                    class="d-flex justify-content-center flex-wrap mb-3 mt-3"
+                  >
+                    <a href="dressup" class="directory-img-box">
                       <img
                         src="./home/assets/dressup.png"
                         class="directory-img"
@@ -130,45 +160,9 @@
                         spirit. It is mostly meant to showcase his various
                         outfits. All art assets are drawn by me.
                         <br /><br />
-                        <i><b>Warning:</b> Page has moderate image load</i>
+                        <i><b>Warning:</b> Page has moderate image load.</i>
                       </p>
-                      <a
-                        class="visit-btn ml-3 py-1"
-                        href="https://kanekos.neocities.org/dressup/"
-                        >Visit</a
-                      >
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <hr class="dotted-divider" />
-                  </div>
-                  <div
-                    class="d-flex justify-content-center flex-wrap mb-3 mt-3"
-                  >
-                    <a
-                      href="https://kanekos99.github.io/gallery/"
-                      class="directory-img-box"
-                    >
-                      <img
-                        src="./home/assets/gallery-preview.png"
-                        class="directory-img"
-                      />
-                    </a>
-                    <div class="directory-text-box row align-items-center">
-                      <h2 class="directory-text-heading">Kaneko's Gallery</h2>
-                      <p class="directory-text home-text">
-                        A simple art gallery site based off of Carrd, created
-                        because I hit the image upload limit on Carrd. Features
-                        mostly original character art but with a dedicated
-                        fanart section as well.
-                        <br /><br />
-                        <i><b>Warning:</b> External website (to be migrated) - high image load</i>
-                      </p>
-                      <a
-                        class="visit-btn ml-3 py-1"
-                        href="https://kanekos99.github.io/gallery/"
-                        >Visit</a
-                      >
+                      <a class="visit-btn ml-3 py-1" href="dressup">Visit</a>
                     </div>
                   </div>
                 </div>
@@ -238,13 +232,19 @@
                           <i class="fa fa-star" aria-hidden="true"></i>
                         </button>
                       </a>
-                      <a class="link-btn-container my-2" href="https://bsky.app/profile/kanekos99.bsky.social">
+                      <a
+                        class="link-btn-container my-2"
+                        href="https://bsky.app/profile/kanekos99.bsky.social"
+                      >
                         <button class="link-btn px-3">
                           Bluesky
                           <i class="fa fa-twitter" aria-hidden="true"></i>
                         </button>
                       </a>
-                      <a class="link-btn-container my-2" href="https://github.com/kanekos99">
+                      <a
+                        class="link-btn-container my-2"
+                        href="https://github.com/kanekos99"
+                      >
                         <button class="link-btn px-3">
                           Github
                           <i class="fa fa-github" aria-hidden="true"></i>
@@ -281,7 +281,9 @@
                         <b>07/09/2025</b>
                         <br /><br />
                         Styled to do list, added links box, made sidebar button
-                        sticky, changed background pattern.
+                        sticky, changed background pattern. Migrated gallery
+                        over (although images are still hosted externally on my
+                        github pages site)
                       </p>
                       <hr class="dotted-divider-2" />
                       <p class="home-text update-text">
@@ -333,19 +335,6 @@
                 >
                   <div class="accordion-body todo-accordion-body shadow">
                     <ul class="list-group update-text-container">
-                      <li class="list-group-item">
-                        <div class="row align-items-start pe-2">
-                          <div class="col-3 checkbox-col">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <div class="col-9 todo-col">Gallery page</div>
-                        </div>
-                      </li>
                       <li class="list-group-item">
                         <div class="row align-items-start pe-2">
                           <div class="col-3 checkbox-col">
@@ -441,6 +430,7 @@
       </div>
     </div>
 
+    <script src="common/scripts/sidemenu.js"></script>
     <script src="home/scripts/main.js"></script>
   </body>
 </html>
