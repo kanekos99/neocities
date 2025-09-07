@@ -15,7 +15,7 @@ body {
   font-size: 1.05rem;
 }
 
-/* body {
+body {
   width: 100%;
   height: 100%;
   background: white;
@@ -29,38 +29,29 @@ body {
   text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
-} */
-
-body {
-  width: 100%;
-  height: 100%;
-  background: white;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='none' stroke='%23FFFFFF' stroke-width='2'/%3E%3C/svg%3E"),
-    linear-gradient(
-      45deg,
-      rgba(237, 208, 159, 1) 0%,
-      rgba(171, 215, 216, 1) 60%
-    );
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-position: 0px -2px; /* shift down by 20px */
-  text-align: center;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
+/* html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  text-align: center;
+  background-color: #9ad4d6;
+
+  width: 100%;
+  height: 100%;
+} */
+
 .update-box {
-  width: 30.5%;
+  width: 66%;
   z-index: 0;
 }
 
 .todo-box {
-  width: 30.5%;
-  z-index: 0;
-}
-
-.links-box {
-  width: 30.5%;
+  width: 30%;
   z-index: 0;
 }
 
@@ -100,6 +91,8 @@ body {
 .home-text-container {
   overflow-y: auto;
   height: 190px;
+  background-color: white;
+  border-radius: 0px 0px 0px 25px;
 }
 
 .home-text {
@@ -128,10 +121,12 @@ a:hover {
 }
 
 .home-container {
-  background-color: white;
-  border-radius: 25px 25px 0px 0px;
+  background-color: none;
+  border-radius: 30px 30px 0px 25px;
   color: #2b7379;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+  border: solid #2b7379;
+  border-width: 3px;
 }
 
 .home-icon {
@@ -153,12 +148,15 @@ a:hover {
 
 .accordion-body {
   background-color: white;
+  border-radius: 0px 0px 0px 25px;
+  border: solid #2b7379;
+  border-width: 3px;
 }
 
 .accordion-button {
   font-family: "Dosis", sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.188rem;
   align-content: center;
   background-color: #2b7379 !important;
   color: white !important;
@@ -263,12 +261,12 @@ a:hover {
 }
 
 .update-text-container {
-  height: 280px;
+  height: 200px;
   overflow: auto;
 }
 
 .update-accordion-body {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 11px 0px 0px;
 }
 
 .update-text {
@@ -278,7 +276,10 @@ a:hover {
 .todo-accordion-body {
   padding: 0px;
   text-align: left;
-  background-color: rgb(232, 232, 232);
+}
+
+.list-group-item {
+  color: #2b7379;
 }
 
 .form-check-input {
@@ -312,61 +313,21 @@ label.form-check-label:focus,
   padding: 0px;
 }
 
-.list-group {
-  border-radius: 0px;
-}
-
 .list-group-item {
   border: none;
-  color: #2b7379 !important;
 }
 
 .list-group > .list-group-item:nth-child(even) {
-  background-color: rgb(255, 243, 222);
+  background-color: rgba(237, 208, 159, 0.281);
+}
+
+.links-box {
+  width: 30%;
 }
 
 .others-box {
-  width: 100%;
+  width: 66%;
   z-index: 0;
-}
-
-.coming-soon-img {
-  width: 60%;
-}
-
-.link-btn-container {
-  display: block;
-}
-
-.link-btn {
-  background-color: #67a9a9;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  font-family: "Dosis", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  width: 100%;
-  height: 30px;
-  transition: background-color 0.2s ease-in-out;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.link-btn:hover {
-  background-color: #4b8181;
-}
-
-.link-btn-container:nth-child(even) .link-btn {
-  background-color: rgba(237, 208, 159, 1);
-  transition: background-color 0.2s ease-in-out;
-  color: rgb(127, 101, 68);
-}
-
-.link-btn-container:nth-child(even) .link-btn:hover {
-  background-color: rgb(197, 163, 105);
 }
 
 /*---------------------------- Side Menu -----------------------------*/
@@ -558,12 +519,6 @@ label.form-check-label:focus,
     z-index: 0;
   }
 
-  .links-box {
-    width: 100%;
-    margin: 20px 0px !important;
-    z-index: 0;
-  }
-
   .checkbox-col {
     min-width: 7.5vw;
     max-width: 15%;
@@ -583,9 +538,5 @@ label.form-check-label:focus,
 
   .accordion {
     z-index: -1;
-  }
-
-  .coming-soon-img {
-    width: 100%;
   }
 }
