@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap");
+@font-face {
+  font-family: afacad;
+  src: url("../assets/fonts/Afacad-Regular.ttf");
+}
+
+.guestbook-image {
+  height: 250px;
+  /* filter: drop-shadow(0 0 0.75rem gray); */
+  cursor: pointer;
+}
+
+#title {
+  display: none;
+}
+
+a {
+  color: #2b7379;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#guestbooks___guestbook-form {
+  width: 100%;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 2px 2px #2b7379;
+  border: 2px solid #afdce0;
+  padding: 25px;
+}
+
+#guestbooks___guestbook-form-container {
+  width: 42vw;
+}
+
+.messages-container {
+  width: 40vw;
+}
+
+.guestbooks___input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #2b7379;
+}
+
+.input-label {
+  padding: 0.3em 0em 0.3em 0em;
+  margin: 0px 10px 5px 0px;
+  background-color: #2b7379;
+  color: white;
+  border-radius: 25px;
+  width: 25%;
+  font-family: "Dosis";
+}
+
+input[type="text"],
+input[type="url"],
+textarea {
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border: 2px solid #92cfd9;
+  background-color: #d6eef3;
+  border-radius: 5px;
+  color: #2b7379;
+  width: 70%;
+}
+
+input[type="text"],
+input[type="url"] {
+  border-radius: 25px;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  border: 2px solid #0097b2 !important;
+  outline: 0 none;
+}
+
+button[type="submit"] {
+  background: #2b7379;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background: #67a9a9;
+}
+
+#guestbooks___guestbook-made-with {
+  text-align: center;
+}
+
+#guestbooks___guestbook-messages-header {
+  margin-top: 1em;
+  color: white;
+  font-family: "Dosis";
+  font-weight: 700;
+  font-size: 1.7rem;
+  background-color: #2b7379;
+  border-radius: 25px;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+}
+
+#guestbooks___guestbook-messages-container {
+  margin-top: 1em;
+  overflow-y: scroll;
+  height: 488px;
+  background-color: #ffffff; /* white base */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 27px,
+    #67a9a9 28px
+  );
+}
+
+.messages-box-outer {
+  background-color: #67a9a9;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 2px 2px #2b7379;
+}
+
+.messages-box-inner {
+  background-color: white;
+  padding: 10px 10px 15px 10px;
+  border-radius: 25px;
+  box-shadow: 2px 2px black;
+}
+
+.guestbook-message {
+  background-color: #d6eef3e6;
+  padding: 10px 20px 10px 20px;
+  margin: 11px 20px 11px 20px;
+  border-radius: 10px;
+}
+
+.guestbook-message blockquote {
+  margin: 0px;
+  line-height: 1.2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    45deg,
+    rgba(237, 208, 159, 1) 0%,
+    rgba(171, 215, 216, 1) 60%
+  );
+  width: 10px !important;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(237, 208, 159, 1) 0%,
+    rgba(171, 215, 216, 1) 60%
+  );
+  cursor: pointer;
+}
+
+/* @media (max-width: 640px) {
+  .container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+} */
+
+@media only screen and (max-width: 898px) {
+  #guestbooks___guestbook-form-container {
+    width: 90vw;
+    border-radius: 25px;
+  }
+
+  .input-label {
+    width: 35%;
+  }
+
+  input[type="text"],
+  input[type="url"],
+  textarea {
+    width: 60%;
+  }
+
+  .messages-container {
+    width: 90vw;
+    margin-bottom: 10px;
+  }
+
+  #guestbooks___guestbook-made-with {
+    margin-bottom: 10px;
+  }
+}

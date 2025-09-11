@@ -64,8 +64,14 @@
               onmouseout="this.src='home/assets/home-v2.png';"
             />
             <div class="speech-bubble shadow">
-              <p class="status-date"><u><i>09/09/2025 10.41pm</i></u></p>
-              I want to use status cafe like the cool kids
+              <div id="statuscafe">
+                <div id="statuscafe-username"></div>
+                <div id="statuscafe-content"></div>
+              </div>
+              <script
+                src="https://status.cafe/current-status.js?name=kanekos"
+                defer
+              ></script>
             </div>
             <div
               class="row justify-content-center home-container about-box mt-3 shadow"
@@ -84,7 +90,13 @@
                   construction because I'm too busy playing Animal Crossing to
                   get off my lazy ass and work on it. Anyway, feel free to
                   explore by clicking on the sidebar or checking out the
-                  directory below.
+                  directory below. <br /><br />
+                  The current pages on this site are completely coded by myself
+                  in HTML/ CSS/ Javascript with Bootstrap and Jquery. I might
+                  try different libraries/ frameworks for new pages in the
+                  future.<br /><br />
+                  I try my best to make everything mobile friendly but I can't
+                  test on every device in the world orzz<br /><br />
                 </p>
               </div>
             </div>
@@ -166,6 +178,34 @@
                         <i><b>Warning:</b> Page has moderate image load.</i>
                       </p>
                       <a class="visit-btn ml-3 py-1" href="dressup">Visit</a>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <hr class="dotted-divider" />
+                  </div>
+                  <div
+                    class="d-flex justify-content-center flex-wrap mb-4 mt-3"
+                  >
+                    <a href="guestbook/index.html" class="directory-img-box">
+                      <img
+                        src="./home/assets/guestbook-preview.png"
+                        class="directory-img"
+                      />
+                    </a>
+                    <div class="directory-text-box row align-items-center">
+                      <h2 class="directory-text-heading">Guest Book</h2>
+                      <p class="directory-text home-text">
+                        A guest book page! Made with
+                        <a href="https://guestbooks.meadow.cafe/"
+                          ><b>Guestbooks</b></a
+                        >
+                        which is a super customisable guest book tool that I
+                        highly recommend for anyone who wants more control over
+                        the design. Feel free to leave a message!
+                      </p>
+                      <a class="visit-btn ml-3 py-1" href="guestbook/index.html"
+                        >Visit</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -280,6 +320,26 @@
                 >
                   <div class="accordion-body update-accordion-body shadow">
                     <div class="update-text-container px-4 pb-3 pt-4">
+                      <p class="home-text update-text">
+                        <b>11/09/2025</b>
+                        <br /><br />
+                        Integrated
+                        <a href="https://status.cafe/users/kanekos"
+                          >status.cafe</a
+                        >
+                        - try hovering over the cat at the top of the page! +
+                        added
+                        <a href="https://kanekos.neocities.org/guestbook/"
+                          >guestbook page</a
+                        >
+                      </p>
+                      <hr class="dotted-divider-2" />
+                      <p class="home-text update-text">
+                        <b>09/09/2025</b>
+                        <br /><br />
+                        Added placeholder speech bubble for status message
+                      </p>
+                      <hr class="dotted-divider-2" />
                       <p class="home-text update-text">
                         <b>07/09/2025</b>
                         <br /><br />
