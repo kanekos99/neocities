@@ -15,24 +15,26 @@ const sideMenuHTML = `
     </div>
 `;
 
-$(document).ready(() => {
-  $(sideMenuHTML).insertBefore("#main-body");
+document.addEventListener("DOMContentLoaded", () => {
+  const mainBody = document.querySelector("#main-body");
+  mainBody.insertAdjacentHTML("beforebegin", sideMenuHTML);
 });
 
-var menuOpen = false;
+let menuOpen = false;
 function toggleSideMenu() {
-  const sideBar = $("#side-menu");
-  const mainBody = $("#main-body");
+  const sideBar = document.querySelector("#side-menu");
+  const mainBody = document.querySelector("#main-body");
+  const body = document.body;
 
   if (menuOpen) {
-    sideBar.removeClass("activemenu");
-    mainBody.removeClass("slide-right");
-    $(document.body).removeClass("lock-scroll");
+    sideBar.classList.remove("activemenu");
+    mainBody.classList.remove("slide-right");
+    body.classList.remove("lock-scroll");
     menuOpen = false;
   } else {
-    sideBar.addClass("activemenu");
-    mainBody.addClass("slide-right");
-    $(document.body).addClass("lock-scroll");
+    sideBar.classList.add("activemenu");
+    mainBody.classList.add("slide-right");
+    body.classList.add("lock-scroll");
     menuOpen = true;
   }
 }
