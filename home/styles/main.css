@@ -117,6 +117,26 @@ body {
   cursor: pointer;
 }
 
+.site-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-btn-textarea {
+  font-size: 0.5rem;
+  height: 31px;
+  width: 200px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.site-button-text {
+  font-size: 0.9rem;
+  line-height: 1.1;
+  color: #2b7379;
+}
+
 a {
   text-decoration: none;
 }
@@ -265,7 +285,7 @@ a:hover {
 }
 
 .update-text-container {
-  max-height: 273px;
+  max-height: 428px;
   overflow: auto;
 }
 
