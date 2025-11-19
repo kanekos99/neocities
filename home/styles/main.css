@@ -101,7 +101,9 @@ body {
 
 .home-text-container {
   overflow-y: auto;
-  height: 190px;
+  height: 210px;
+  background-color: white;
+  border-radius: 0px 0px 0px 10px !important;
 }
 
 .home-text {
@@ -115,6 +117,53 @@ body {
   padding-right: 5px;
   filter: drop-shadow(0 0 0.75rem gray);
   cursor: pointer;
+}
+
+.home-about-container {
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 35%;
+  background-color: #67a9a9;
+  border-radius: 0px 0px 10px 10px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1rem 0px 1rem;
+  background-color: rgba(237, 208, 159, 1);
+  color: rgb(127, 101, 68);
+  margin-left: auto;
+  /* margin-top: 10px; */
+}
+
+.home-about-container:hover {
+  background-color: #4b8181;
+  background-color: rgb(197, 163, 105);
+  color: white;
+}
+
+.home-image-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.home-body {
+  margin: 0;
+  padding: 0;
+}
+
+.about-btn-container {
+  width: 100%;
+  margin: 0px 20px 0px 20px;
 }
 
 .site-button-container {
@@ -150,10 +199,9 @@ a:hover {
 }
 
 .home-container {
-  background-color: white;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 25px 25px 25px 25px;
   color: #2b7379;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .home-icon {
@@ -399,7 +447,7 @@ label.form-check-label:focus,
   background: #ffffff;
   border-radius: 0.4em;
   left: 27%;
-  top: 5%;
+  top: 10%;
   padding: 15px;
   z-index: 10;
   transition: opacity 0.3s ease;
@@ -493,11 +541,16 @@ label.form-check-label:focus,
   }
 
   .home-text-container {
+    border-radius: 0px 0px 0px 0px !important;
     padding: 20px !important;
   }
 
   .home-text {
     padding: 0px !important;
+  }
+
+  .home-about-container {
+    width: 100%;
   }
 
   .site-heading {
@@ -558,7 +611,7 @@ label.form-check-label:focus,
 
   .speech-bubble {
     position: absolute;
-    left: 30%;
+    left: 35%;
     top: 5%;
   }
 }

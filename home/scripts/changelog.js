@@ -1,5 +1,17 @@
 const changelog = [
   {
+    status: `Updated design for <a href="https://kanekos.neocities.org/phainon-shrine/">shrine page</a>`,
+    date: "18/11/2025",
+  },
+  {
+    status: `Added some new art to the <a href="https://kanekos.neocities.org/gallery/#comics">gallery</a>!`,
+    date: "17/11/2025",
+  },
+  {
+    status: `Dynamically load to do list, add back to home button to <a href="https://kanekos.neocities.org/dressup/">dress up game page</a>`,
+    date: "03/11/2025",
+  },
+  {
     status: `Added some extra stuff to <a href="https://kanekos.neocities.org/phainon-shrine/">shrine page</a>, added site button and neocities links, dynamically load changelog`,
     date: "02/11/2025",
   },
@@ -30,5 +42,36 @@ const changelog = [
   {
     status: `This website is created.`,
     date: "29/04/2022",
+  },
+];
+
+const todo = [
+  {
+    label: "Add more stuff to shrine page",
+    status: "completed",
+  },
+  {
+    label: "Revamp to-do list design",
+    status: "",
+  },
+  {
+    label: "Revamp sketch log page",
+    status: "",
+  },
+  {
+    label: "Add side bar to other pages",
+    status: "completed",
+  },
+  {
+    label: "Add chat box - Chattable",
+    status: "",
+  },
+  {
+    label: "Dynamically load todo and change log",
+    status: "completed",
+  },
+  {
+    label: "OC page",
+    status: "",
   },
 ];

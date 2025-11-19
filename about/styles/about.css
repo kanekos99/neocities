@@ -1,0 +1,306 @@
+@font-face {
+  font-family: afacad;
+  src: url("../assets/fonts/Afacad-Regular.ttf");
+}
+
+.description-container {
+  width: 54%;
+}
+
+.stats-container {
+  min-width: 40%;
+  margin-right: 5%;
+}
+
+.stats-img {
+  height: 220px;
+  margin-bottom: -25px;
+  z-index: 2;
+}
+
+.stats-box {
+  min-height: 300px;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 15px 20px 15px;
+}
+
+.box-label {
+  background-color: #2b7379;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.stats-item {
+  background-color: #d6eef3;
+  border-radius: 25px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.stats-item label {
+  background-color: #67a9a9;
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  width: 90px;
+  text-align: center;
+}
+
+.stats-box-2 {
+  min-height: 220px;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 15px 20px 15px;
+  margin-top: 15px;
+}
+
+.progress-row {
+  display: flex;
+  align-items: center;
+}
+
+.progress-row .progress {
+  flex: 1;
+  height: 27px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 25px;
+}
+
+.progress-row label {
+  font-weight: 900;
+  margin-right: 20px;
+  width: 50px;
+}
+
+.description-header {
+  width: 60%;
+  margin-left: auto;
+  text-align: right;
+}
+
+.description-box-outer {
+  background-color: #d6eef3;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.description-box-inner {
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px 25px 20px 25px;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.description-box-inner a {
+  font-weight: 900;
+  color: #2b7379;
+  text-decoration: underline dotted;
+}
+
+.description-box-inner a:hover {
+  color: rgba(237, 208, 159, 1);
+}
+
+.inventory-container {
+  min-height: 400px;
+  background-color: #d6eef3;
+  border-radius: 25px;
+  width: 100%;
+  padding: 25px;
+}
+
+.inventory-tab-container {
+  width: 100%;
+}
+
+.inventory-header {
+  width: 30%;
+}
+
+.inventory-description {
+  background-color: white;
+  border-radius: 25px;
+  width: 100%;
+  padding: 25px;
+}
+
+.inventory-description p {
+  margin: 0px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.tab-content {
+  max-width: 80%;
+  min-width: 80%;
+}
+
+.tab-pane {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px 5px 20px 15px;
+  min-height: 300px;
+}
+
+.tab-pane-body {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 10px;
+}
+
+#inventory-tabs {
+  width: 40%;
+  margin-right: 0px !important;
+  margin-top: 20px;
+}
+
+.inventory-tab {
+  background-color: #67a9a9;
+  color: white;
+  border-radius: 25px 0px 0px 25px !important;
+  margin: 5px 0px 5px 0px;
+  padding: 5px 10px 5px 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.inventory-tab:hover {
+  background-color: #2b7379;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.inventory-tab.active {
+  background-color: #2b7379 !important;
+}
+
+.inventory-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  margin: 5px;
+  border: 3px solid #67a9a9;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.inventory-img:hover {
+  transform: scale(1.05);
+  border: 3px solid black;
+}
+
+.inventory-item p {
+  margin: auto auto 0px auto !important;
+  width: 140px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.avatar-header {
+  width: 40%;
+  margin-left: auto;
+}
+
+.avatar-container {
+  min-height: 400px;
+  background-color: white;
+  border-radius: 25px;
+  width: 100%;
+  padding: 15px;
+}
+
+/*-----------------CUSTOM SCROLL BAR-------------------------------*/
+
+/* Track */
+.tab-pane-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.tab-pane-body::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+}
+
+/*-----------------Responsiveness-------------------------------*/
+
+@media only screen and (max-width: 898px) {
+  .description-container {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .stats-container {
+    min-width: 100%;
+    margin-right: 0px;
+  }
+
+  .description-header {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .inventory-header,
+  .avatar-header {
+    width: 100%;
+  }
+
+  .tab-pane {
+    min-width: 100%;
+  }
+
+  .inventory-tab {
+    border-radius: 10px 0px 0px 10px !important;
+    line-height: 1.1;
+  }
+
+  .tab-pane {
+    border-radius: 15px;
+  }
+
+  .inventory-img {
+    width: 93px;
+    height: 93px;
+  }
+
+  .inventory-item p {
+    width: 93px;
+  }
+
+  .tab-pane-body {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .inventory-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .inventory-item p {
+    width: 150px;
+  }
+
+  .tab-pane-body {
+    margin-left: 0px;
+  }
+}

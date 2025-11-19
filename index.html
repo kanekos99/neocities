@@ -57,49 +57,57 @@
         <!---------------About Page---------------->
         <div class="row justify-content-center pt-5 pb-4">
           <div class="d-flex flex-wrap justify-content-center">
-            <img
-              src="home/assets/home-v2.png"
-              class="home-image mt-4"
-              onmouseover="this.src='home/assets/confuse-v2.png';"
-              onmouseout="this.src='home/assets/home-v2.png';"
-            />
-            <div class="speech-bubble shadow">
-              <div id="statuscafe">
-                <div id="statuscafe-username"></div>
-                <div id="statuscafe-content"></div>
+            <div class="home-image-wrapper">
+              <img
+                src="home/assets/home-v2.png"
+                class="home-image mt-4"
+                onmouseover="this.src='home/assets/confuse-v2.png';"
+                onmouseout="this.src='home/assets/home-v2.png';"
+              />
+              <div class="speech-bubble shadow">
+                <div id="statuscafe">
+                  <div id="statuscafe-username"></div>
+                  <div id="statuscafe-content"></div>
+                </div>
+                <script
+                  src="https://status.cafe/current-status.js?name=kanekos"
+                  defer
+                ></script>
               </div>
-              <script
-                src="https://status.cafe/current-status.js?name=kanekos"
-                defer
-              ></script>
             </div>
             <div
-              class="row justify-content-center home-container about-box mt-3 shadow"
+              class="row justify-content-center home-container about-box mt-3"
             >
               <h1 class="site-heading py-3 mb-0">
                 <i class="fa fa-home home-icon" aria-hidden="true"></i>Kaneko's
                 Space
               </h1>
-              <div class="home-text-container px-5 pt-3">
-                <p class="home-text pt-3">
-                  Hello and welcome to my page! You can call me Kan/ Kaneko/
-                  Kanekos/ whatever. I am an hobbyist artist who really likes to
-                  make OCs. I also code stuff sometimes. <br />
-                  <br />This site is sort of a compilation of all the different
-                  stuff I've made. For the foreseeable future, it will be under
-                  construction because I'm too busy playing Animal Crossing to
-                  get off my lazy ass and work on it. Anyway, feel free to
-                  explore by clicking on the sidebar or checking out the
-                  directory below. <br /><br />
-                  The current pages on this site are completely designed and
-                  coded by myself in HTML/ CSS/ Javascript with Bootstrap and
-                  Jquery. I might try different libraries/ frameworks for new
-                  pages in the future.<br /><br />
-                  I tried my best to make everything mobile friendly but I can't
-                  test on every device in the world orzzzz and I guess it goes
-                  without saying this website will not function at all with
-                  Javascript disabled.<br /><br />
-                </p>
+              <div class="home-body">
+                <div class="home-text-container px-5 pt-3 shadow">
+                  <p class="home-text pt-3">
+                    Hello and welcome to my page! You can call me Kan/ Kaneko/
+                    Kanekos/ whatever. I am an hobbyist artist who really likes
+                    to make OCs. I also code stuff sometimes. <br />
+                    <br />This site is sort of a compilation of all the
+                    different stuff I've made. For the foreseeable future, it
+                    will be under construction because I'm too busy playing
+                    Animal Crossing to get off my lazy ass and work on it.
+                    Anyway, feel free to explore by clicking on the sidebar or
+                    checking out the directory below. <br /><br />
+                    The current pages on this site are completely designed and
+                    coded by myself in HTML/ CSS/ Javascript with Bootstrap and
+                    Jquery. I might try different libraries/ frameworks for new
+                    pages in the future.<br /><br />
+                    I tried my best to make everything mobile friendly but I
+                    can't test on every device in the world orzzzz and I guess
+                    it goes without saying this website will not function at all
+                    with Javascript disabled.<br /><br />
+                  </p>
+                </div>
+                <a class="home-about-container shadow" href="about/index.html">
+                  about me
+                  <i class="fa fa-paw" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -198,10 +206,10 @@
                       <h2 class="directory-text-heading">Phainon Shrine</h2>
                       <p class="directory-text home-text">
                         I swear I will make this into a proper shrine page some
-                        day but for now, I made this in light of certain news
-                        about upcoming the Honkai Star Rail patch 3.7 story
-                        (this is NOT a spoiler please do not take this seriously
-                        the update isn't even out yet as of me making this)
+                        day but for now, this is a shrine page dedicated to
+                        Phainon from Honkai Star Rail that I mostly made as a
+                        joke. (This is NOT a spoiler probably please do not take
+                        this seriously.)
                         <br /><br />
                         <i><b>Warning:</b> Page has moderate image load.</i>
                       </p>
@@ -407,96 +415,10 @@
                   aria-labelledby="headingOne"
                 >
                   <div class="accordion-body todo-accordion-body shadow">
-                    <ul class="list-group update-text-container">
-                      <li class="list-group-item">
-                        <div class="row align-items-start pe-2">
-                          <div class="col-3 checkbox-col">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <div class="col-9 todo-col">
-                            Add more stuff to shrine page
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-start pe-2">
-                          <div class="col-3 checkbox-col">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <div class="col-9 todo-col">
-                            Revamp sketch log page
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-start pe-2">
-                          <div class="col-3 checkbox-col">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <div class="col-9 todo-col">
-                            Add side bar to other pages
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-start pe-2">
-                          <div class="col-3 checkbox-col">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <div class="col-9 todo-col">
-                            Add chat box - Chattable
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-start pe-2">
-                          <div class="col-3 checkbox-col">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <div class="col-9 todo-col">
-                            Dynamically load todo and change log
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item">
-                        <div class="row align-items-start pe-2">
-                          <div class="col-3 checkbox-col">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <div class="col-9 todo-col">OC page</div>
-                        </div>
-                      </li>
-                    </ul>
+                    <ul
+                      class="list-group update-text-container"
+                      id="todo-list"
+                    ></ul>
                   </div>
                 </div>
               </div>
