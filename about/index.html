@@ -134,9 +134,9 @@
                 <div class="description-box-inner">
                   Hello and welcome to my page! I go by <b>Kanekos</b> or
                   <b>Kaneko</b> online. I am really bad at writing self
-                  introductions because I never know what to put in these and
-                  I’m sorry if this sounds like some kind of cover letter for a
-                  job application.<br /><br />
+                  introductions because I never know what to put in these so I’m
+                  sorry if this sounds like some kind of cover letter for a job
+                  application.<br /><br />
                   My main hobby is drawing and I mostly draw my own original
                   characters. To view my art, you can check out my
                   <a href="https://kanekos.neocities.org/gallery/"
@@ -185,7 +185,10 @@
                 These are things that I am currently reading/ watching/ playing
                 and actively follow as part of the fandom, or things that I have
                 read/ watched/ played in the past and still enjoy even if I’m
-                not actively engaging in the fandom.
+                not actively engaging in the fandom. These are purely based on
+                my personal preferences and not necessarily intended to be a
+                list of recommendations. Also not sorted according to any
+                particular order.
               </p>
             </div>
             <div class="row justify-content-center mt-3">
@@ -222,7 +225,7 @@
                   aria-controls="shows-tab"
                   aria-selected="false"
                 >
-                  shows
+                  shows/ movies
                 </button>
                 <button
                   class="nav-link inventory-tab"
@@ -284,12 +287,76 @@
         <div class="d-flex flex-wrap flex-row mt-3 mb-5">
           <div class="avatar-container">
             <div class="box-label avatar-header">avatar</div>
+            <div class="avatar-description mt-3">
+              <p>
+                Catnekos is my mascot (?) of sorts and basically how I represent
+                myself, inspired by how some mangakas like to draw themselves as
+                a weird little creature. I have built up a surprising amount of
+                art for this creature over the years (including a live2D model
+                that I made) so I might as well as showcase it here.
+              </p>
+            </div>
+          </div>
+          <div class="avatar-gallery d-flex flex-row flex-wrap mt-3">
+            <div class="model-container">
+              <video class="model-img" controls autoplay loop>
+                <source
+                  src="./assets/catnekos/catnekos_demo.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="gallery-wrapper">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center gallery-container"
+                id="catnekos_gallery"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="galleryModalLabel"
+    >
+      <i
+        class="fa fa-times-circle-o modal-cross"
+        aria-hidden="true"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></i>
+      <div class="modal-nav-container">
+        <i
+          class="fa fa-chevron-left modal-arrow modal-arrow-left"
+          aria-hidden="true"
+          onclick="showNextOrPrevImg(-1);"
+        ></i>
+      </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex flex-row justify-content-center modal-row">
+            <div class="modal-image-container">
+              <img src="" class="modal-image img-fluid" id="modal-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-nav-container">
+        <i
+          class="fa fa-chevron-right modal-arrow modal-arrow-right"
+          aria-hidden="true"
+          onclick="showNextOrPrevImg(1);"
+        ></i>
+      </div>
+    </div>
+
     <script src="../common/scripts/sidemenu.js"></script>
+    <script src="./scripts/catnekos.js"></script>
     <script src="./scripts/inventory.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
