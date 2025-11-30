@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Added <a href="https://kanekos.neocities.org/about/">about me page</a>`,
+    date: "30/11/2025",
+  },
+  {
     status: `Updated design for <a href="https://kanekos.neocities.org/phainon-shrine/">shrine page</a>`,
     date: "18/11/2025",
   },
@@ -51,7 +55,19 @@ const todo = [
     status: "completed",
   },
   {
+    label: "Update links in about page",
+    status: "",
+  },
+  {
+    label: "Integrate interactive live2D model",
+    status: "",
+  },
+  {
     label: "Revamp to-do list design",
+    status: "",
+  },
+  {
+    label: "Set up deployment workflow",
     status: "",
   },
   {

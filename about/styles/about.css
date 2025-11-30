@@ -241,6 +241,17 @@
   padding: 7px;
   display: flex;
   align-items: end;
+  /* width: 32.5%; */
+  height: 420px;
+}
+
+canvas {
+  width: 270px;
+}
+
+.model-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .model-img {
@@ -251,7 +262,7 @@
 /*------------------------gallery------------------------*/
 
 .gallery-wrapper {
-  width: 65%;
+  width: 66%;
   margin-left: 10px;
   background-color: #d6eef3;
   padding: 10px;
@@ -477,6 +488,15 @@
     width: 100%;
     margin-left: 0px;
     margin-top: 10px;
+  }
+
+  .model-wrapper {
+    width: 100%;
+  }
+
+  canvas {
+    width: 100%;
+    height: 420px;
   }
 }
 

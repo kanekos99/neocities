@@ -56,9 +56,6 @@ function loadInventory(category, container) {
 function loadImages() {
   imageCategories.forEach((category) => {
     category.categoryArray.forEach((image) => {
-      //for neocities
-      let externalUrl = "https://kanekos99.github.io/phainon-shrine" + image;
-
       let galleryClass = "gallery-thumbnail";
 
       const imageThumbnailHTML = `
