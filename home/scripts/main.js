@@ -4,6 +4,9 @@ const changelogBox = $(changeLogBox_ID);
 const toDoBox_ID = "#todo-list";
 const toDoBox = $(toDoBox_ID);
 
+const sortabeletodo = document.getElementById("todo-list");
+
+
 const app = {
   init: function () {
     console.log("Hello world :)");
@@ -37,15 +40,10 @@ function loadToDo() {
     if (item.status !== "completed") {
       let toDoItemHTML =
         `                      
-        <li class="list-group-item">
+        <li class="list-group-item" draggable="true">
           <div class="row align-items-start pe-2">
             <div class="col-3 checkbox-col">
-              <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-               />
+              <img src="./home/assets/thumbtack.png" class="list-thumbtack">
             </div>
             <div class="col-9 todo-col">
               ` +
@@ -58,3 +56,7 @@ function loadToDo() {
     }
   });
 }
+
+new Sortable(sortabeletodo, {
+  animation: 150,
+});

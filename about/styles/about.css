@@ -259,6 +259,15 @@ canvas {
   border-radius: 10px;
 }
 
+.live2d-credits {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+}
+
+.live2d-credits a {
+  color: #67a9a9;
+}
+
 /*------------------------gallery------------------------*/
 
 .gallery-wrapper {
@@ -494,9 +503,14 @@ canvas {
     width: 100%;
   }
 
-  canvas {
+  .model-container {
     width: 100%;
-    height: 420px;
+    display: flex;
+    justify-content: center;
+  }
+
+  canvas {
+    height: 380px;
   }
 }
 

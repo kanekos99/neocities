@@ -1,7 +1,11 @@
 const changelog = [
   {
-    status: `Added <a href="https://kanekos.neocities.org/about/">about me page</a>`,
+    status: `Integrated live2d on <a href="https://kanekos.neocities.org/about/">about me page</a>, revamped todo list (try to click and drag!)`,
     date: "30/11/2025",
+  },
+  {
+    status: `Added <a href="https://kanekos.neocities.org/about/">about me page</a>`,
+    date: "29/11/2025",
   },
   {
     status: `Updated design for <a href="https://kanekos.neocities.org/phainon-shrine/">shrine page</a>`,
@@ -60,11 +64,11 @@ const todo = [
   },
   {
     label: "Integrate interactive live2D model",
-    status: "",
+    status: "completed",
   },
   {
     label: "Revamp to-do list design",
-    status: "",
+    status: "completed",
   },
   {
     label: "Set up deployment workflow",

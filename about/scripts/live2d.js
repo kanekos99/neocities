@@ -1,4 +1,4 @@
-const cubism4Model = "./model/catnekos_model/catnekos_model.model3.json";
+const cubism4Model = "https://raw.githubusercontent.com/kanekos99/neocities/refs/heads/main/about/model/catnekos_model/catnekos_model.model3.json";
 
 (async function main() {
   const live2dapp = new PIXI.Application({
