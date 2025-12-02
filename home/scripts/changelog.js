@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `I can now reply to messages in the <a href="https://kanekos.neocities.org/guestbook/">guestbook</a>!`,
+    date: "02/12/2025",
+  },
+  {
     status: `Integrated live2d on <a href="https://kanekos.neocities.org/about/">about me page</a>, revamped todo list (try to click and drag!)`,
     date: "30/11/2025",
   },
