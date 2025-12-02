@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap");
-@font-face {
-  font-family: afacad;
-  src: url("../assets/fonts/Afacad-Regular.ttf");
-}
 
 .guestbook-image {
   height: 300px;
