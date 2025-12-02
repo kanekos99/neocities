@@ -156,13 +156,19 @@ button[type="submit"]:hover {
 .guestbook-message {
   background-color: #d6eef3e6;
   padding: 10px 20px 10px 20px;
-  margin: 11px 20px 11px 20px;
+  margin: 0px 20px 11px 20px;
   border-radius: 10px;
 }
 
 .guestbook-message blockquote {
   margin: 0px;
   line-height: 1.2;
+}
+
+.guestbook-message-reply {
+  background-color: rgba(255, 238, 209, 0.908);
+  margin: 10px 0px 0px 0px;
+  border: dotted #2b737947 3px;
 }
 
 /* width */
@@ -208,7 +214,7 @@ button[type="submit"]:hover {
 
 @media only screen and (max-width: 898px) {
   #guestbooks___guestbook-form-container {
-    width: 90vw;
+    width: 100vw;
     border-radius: 25px;
   }
 
@@ -223,7 +229,7 @@ button[type="submit"]:hover {
   }
 
   .messages-container {
-    width: 90vw;
+    width: 100vw;
     margin-bottom: 10px;
   }
 
@@ -234,5 +240,9 @@ button[type="submit"]:hover {
   .guestbook-image {
     height: 200px;
     cursor: pointer;
+  }
+
+  .guestbook-message {
+    margin: 0px 5px 11px 5px;
   }
 }

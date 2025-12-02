@@ -13,7 +13,11 @@
     />
 
     <link rel="stylesheet" type="text/css" href="../home/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="../common/styles/sidemenu.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../common/styles/sidemenu.css"
+    />
     <link rel="stylesheet" type="text/css" href="styles/guestbook.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -28,9 +32,14 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       async
       src="https://guestbooks.meadow.cafe/resources/js/embed_script/897/script.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      async
+      src="scripts/guestbook.js"
       crossorigin="anonymous"
     ></script>
 
@@ -56,7 +65,10 @@
                 class="row justify-content-center p-3"
               >
                 <div>
-                  <img src="assets/guestbook-img.png" class="guestbook-image mb-3" />
+                  <img
+                    src="assets/guestbook-img.png"
+                    class="guestbook-image mb-3"
+                  />
                 </div>
                 <form
                   id="guestbooks___guestbook-form"
@@ -106,9 +118,7 @@
 
                   <hr class="dotted-divider-2" />
 
-                  <button type="submit">
-                    submit
-                  </button>
+                  <button type="submit">submit</button>
                   <div id="guestbooks___error-message"></div>
                 </form>
               </div>
