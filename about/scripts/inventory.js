@@ -54,6 +54,26 @@ const games = [
     name: "Final Fantasy XIV",
     link: "#",
   },
+  {
+    icon: "./assets/inventory/games/undertale.png",
+    name: "Undertale",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/games/flight-rising.png",
+    name: "Flight Rising",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/games/dappervolk.png",
+    name: "Dappervolk",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/games/goatlings.png",
+    name: "Goatlings",
+    link: "#",
+  },
 ];
 
 const shows = [

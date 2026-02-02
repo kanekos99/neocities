@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <link
@@ -13,7 +13,6 @@
     />
 
     <link rel="stylesheet" type="text/css" href="home/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="home/styles/snowflakes.css" />
     <link rel="stylesheet" type="text/css" href="common/styles/sidemenu.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -63,10 +62,10 @@
               <img
                 src="home/assets/home-v2.png"
                 class="home-image mt-4"
-                onmouseover="this.src='home/assets/confuse-v2-snow.png';"
-                onmouseout="this.src='home/assets/home-v2-snow.png';"
+                onmouseover="this.src = 'home/assets/confuse-v2.png'"
+                onmouseout="this.src = 'home/assets/home-v2.png'"
               />
-              <div class="speech-bubble shadow">
+              <div class="speech-bubble shadow" id="speech-bubble">
                 <div id="statuscafe">
                   <div id="statuscafe-username"></div>
                   <div id="statuscafe-content"></div>
@@ -226,6 +225,36 @@
                   <div
                     class="d-flex justify-content-center flex-wrap mb-4 mt-3"
                   >
+                    <a
+                      href="https://kanekos.neocities.org/blog/"
+                      class="directory-img-box"
+                    >
+                      <img
+                        src="./home/assets/blog-preview.png"
+                        class="directory-img"
+                      />
+                    </a>
+                    <div class="directory-text-box row align-items-center">
+                      <h2 class="directory-text-heading">Blog</h2>
+                      <p class="directory-text home-text">
+                        A blog built with Eleventy for me to act as a space for
+                        me to write stuff on this website. Might post personal
+                        updates, updates on my projects or maybe even some
+                        resources.
+                      </p>
+                      <a
+                        class="visit-btn ml-3 py-1"
+                        href="https://kanekos.neocities.org/blog/"
+                        >Visit</a
+                      >
+                    </div>
+                  </div>
+                  <!-- <div class="row justify-content-center">
+                    <hr class="dotted-divider" />
+                  </div> -->
+                  <!-- <div
+                    class="d-flex justify-content-center flex-wrap mb-4 mt-3"
+                  >
                     <a href="guestbook/index.html" class="directory-img-box">
                       <img
                         src="./home/assets/guestbook-preview.png"
@@ -247,7 +276,7 @@
                         >Visit</a
                       >
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -441,45 +470,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="snowflakes" aria-hidden="true">
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
-      </div>
-      <div class="snowflake">
-        <div class="inner">❅</div>
       </div>
     </div>
 

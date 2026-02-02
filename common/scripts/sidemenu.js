@@ -12,8 +12,8 @@ const sideMenuHTML = `
       <a class="side-menu-button" href="https://kanekos.neocities.org/phainon-shrine/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Shrine(s)</a
       >
-      <a class="side-menu-button" href="https://kanekos.neocities.org/guestbook/"
-        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Guest Book</a
+      <a class="side-menu-button" href="https://kanekos.neocities.org/blog/"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Blog</a
       >
     </div>
 `;
@@ -27,17 +27,25 @@ let menuOpen = false;
 function toggleSideMenu() {
   const sideBar = document.querySelector("#side-menu");
   const mainBody = document.querySelector("#main-body");
+  const speechBubble = document.querySelector("#speech-bubble");
+
   const body = document.body;
 
   if (menuOpen) {
     sideBar.classList.remove("activemenu");
     mainBody.classList.remove("slide-right");
     body.classList.remove("lock-scroll");
+    if (speechBubble) {
+      speechBubble.style.display = "block";
+    }
     menuOpen = false;
   } else {
     sideBar.classList.add("activemenu");
     mainBody.classList.add("slide-right");
     body.classList.add("lock-scroll");
+    if (speechBubble) {
+      speechBubble.style.display = "none";
+    }
     menuOpen = true;
   }
 }

@@ -202,8 +202,8 @@
   border-radius: 15px;
   margin: 5px;
   border: 3px solid #67a9a9;
-  cursor: pointer;
   transition: ease-in-out 0.2s;
+  cursor: pointer;
 }
 
 .inventory-img:hover {
@@ -218,7 +218,6 @@
   white-space: nowrap;
   overflow: hidden;
   font-size: 1rem;
-  cursor: default;
 }
 
 .avatar-header {
@@ -302,6 +301,16 @@ canvas {
 
 .gallery-thumbnail:hover {
   transform: scale(1.05);
+}
+
+/*-----------------CUSTOM SCROLL BAR-------------------------------*/
+
+.custom-tooltip {
+  --bs-tooltip-bg: white;
+  --bs-tooltip-color: #2b7379;
+  font-weight: 600;
+  font-family: afacad;
+  cursor: pointer;
 }
 
 /*-----------------CUSTOM SCROLL BAR-------------------------------*/

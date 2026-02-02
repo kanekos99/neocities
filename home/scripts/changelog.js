@@ -1,5 +1,21 @@
 const changelog = [
   {
+    status: `Removed Christmas theme and <a href="https://kanekos.neocities.org/blog/posts/2026-02-02-Small-Life-Update/">updated blog post</a>. Also tried using Github Actions to deploy blog. My Guestbook isn't working any more either so I'm removing it until I can switch to using a different system (most likely the same comment system on my blog).`,
+    date: "02/02/2026",
+  },
+  {
+    status: `Added a <a href="https://kanekos.neocities.org/blog/">new blog page!</a>`,
+    date: "14/12/2025",
+  },
+  {
+    status: `Add tooltips and other small changes to <a href="https://kanekos.neocities.org/about/">about me page</a>`,
+    date: "10/12/2025",
+  },
+  {
+    status: `Updated not found page and fixed issue with status cafe speech bubble when menu is open`,
+    date: "04/12/2025",
+  },
+  {
     status: `I can now reply to messages in the <a href="https://kanekos.neocities.org/guestbook/">guestbook</a>!`,
     date: "02/12/2025",
   },
@@ -59,12 +75,56 @@ const changelog = [
 
 const todo = [
   {
+    label: "Set up deployment workflow",
+    status: "",
+  },
+  {
+    label: "Status feed for blog",
+    status: "",
+  },
+  {
+    label: "Fix guestbook page",
+    status: "",
+  },
+  {
+    label: "Update links",
+    status: "",
+  },
+  {
+    label: "Make new game page",
+    status: "",
+  },
+  {
+    label: "Make some kind of links/ webring page",
+    status: "",
+  },
+  {
+    label: "Revamp sketch log page",
+    status: "",
+  },
+  {
+    label: "OC page",
+    status: "",
+  },
+  {
+    label: "Add chat box - Chattable",
+    status: "",
+  },
+  {
+    label: "Add side bar to other pages",
+    status: "completed",
+  },
+  {
+    label: "Dynamically load todo and change log",
+    status: "completed",
+  },
+  {
     label: "Add more stuff to shrine page",
     status: "completed",
   },
   {
     label: "Update links in about page",
-    status: "",
+    status: "completed",
   },
   {
     label: "Integrate interactive live2D model",
@@ -73,29 +133,5 @@ const todo = [
   {
     label: "Revamp to-do list design",
     status: "completed",
-  },
-  {
-    label: "Set up deployment workflow",
-    status: "",
-  },
-  {
-    label: "Revamp sketch log page",
-    status: "",
-  },
-  {
-    label: "Add side bar to other pages",
-    status: "completed",
-  },
-  {
-    label: "Add chat box - Chattable",
-    status: "",
-  },
-  {
-    label: "Dynamically load todo and change log",
-    status: "completed",
-  },
-  {
-    label: "OC page",
-    status: "",
   },
 ];

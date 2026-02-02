@@ -36,10 +36,16 @@ function loadInventory(category, container) {
   category.forEach((item) => {
     const itemHtml = `
       <div class="inventory-item">
-          <a href="${item.link}">
+          <a 
+            data-bs-toggle="tooltip" 
+            data-bs-title="${item.name}"
+            data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+          >
             <img
                 src="${item.icon}"
                 class="inventory-img"
+               
             />
           </a>
           <p>
@@ -49,6 +55,13 @@ function loadInventory(category, container) {
     `;
     container.append(itemHtml);
   });
+  //initiate tooltips
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
 }
 
 /*------------------------ for image gallery -------------------------------- */
