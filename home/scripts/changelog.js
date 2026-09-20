@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Published page for my visual novel - <a href="">How (Not) To Kill a Vampire Lord</a>`,
+    date: "13/03/2026",
+  },
+  {
     status: `Removed Christmas theme and <a href="https://kanekos.neocities.org/blog/posts/2026-02-02-Small-Life-Update/">updated blog post</a>. Also tried using Github Actions to deploy blog. My Guestbook isn't working any more either so I'm removing it until I can switch to using a different system (most likely the same comment system on my blog).`,
     date: "02/02/2026",
   },

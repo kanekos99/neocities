@@ -9,6 +9,9 @@ const sideMenuHTML = `
       <a class="side-menu-button" href="https://kanekos.neocities.org/dressup/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Dress Up Game</a
       >
+      <a class="side-menu-button" href="https://kanekos.neocities.org/vampire-vn/"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Visual Novel</a
+      >
       <a class="side-menu-button" href="https://kanekos.neocities.org/phainon-shrine/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Shrine(s)</a
       >
