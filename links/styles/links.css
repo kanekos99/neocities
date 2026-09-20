@@ -252,7 +252,7 @@
     width: 100%;
   }
 
-  .home-link-btn {
+  .home-button-row a {
     width: 50%;
   }
 
@@ -272,18 +272,12 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .home-link-btn {
-    width: 80%;
+  .home-button-row a {
+    width: 70%;
   }
 
   .pic-box-mb {
     width: 100%;
     padding-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .home-link-btn {
-    width: 80%;
   }
 }
