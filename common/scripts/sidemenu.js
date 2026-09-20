@@ -18,6 +18,9 @@ const sideMenuHTML = `
       <a class="side-menu-button" href="https://kanekos.neocities.org/blog/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Blog</a
       >
+      <a class="side-menu-button" href="https://kanekos.neocities.org/links/"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Links</a
+      >
     </div>
 `;
 

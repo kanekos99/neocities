@@ -1,6 +1,10 @@
 const changelog = [
   {
-    status: `Published page for my visual novel - <a href="">How (Not) To Kill a Vampire Lord</a>`,
+    status: `Add a <a href="https://kanekos.neocities.org/links/">links page</a>`,
+    date: "20/09/2026",
+  },
+  {
+    status: `Published page for my visual novel - <a href="https://kanekos.neocities.org/vampire-vn/">How (Not) To Kill a Vampire Lord</a>`,
     date: "13/03/2026",
   },
   {
@@ -91,10 +95,6 @@ const todo = [
     status: "",
   },
   {
-    label: "Update links",
-    status: "",
-  },
-  {
     label: "Make new game page",
     status: "",
   },
@@ -113,6 +113,10 @@ const todo = [
   {
     label: "Add chat box - Chattable",
     status: "",
+  },
+  {
+    label: "Update links",
+    status: "completed",
   },
   {
     label: "Add side bar to other pages",
