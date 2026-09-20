@@ -1,6 +1,6 @@
 const changelog = [
   {
-    status: `Add a <a href="https://kanekos.neocities.org/links/">links page</a>`,
+    status: `Added a <a href="https://kanekos.neocities.org/links/">links page</a>`,
     date: "20/09/2026",
   },
   {
