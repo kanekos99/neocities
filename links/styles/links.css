@@ -129,7 +129,7 @@
   background-color: rgba(237, 208, 159, 1);
   color: rgb(127, 101, 68);
   transition: background-color 0.2s ease-in-out;
-  width: 40%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 2px 2px rgb(175, 146, 95);
@@ -157,6 +157,10 @@
   width: 100%;
   display: flex;
   justify-content: end;
+}
+
+.home-button-row a {
+  width: 40%;
 }
 
 .pic-box-mb {
