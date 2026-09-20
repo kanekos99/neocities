@@ -20,16 +20,16 @@
   font-size: 1.2rem;
   background-color: #2b7379;
   color: white;
-  border-radius: 25px;
-  width: 60%;
-  padding: 10px 12px 10px 12px;
+  border-radius: 25px 25px 0px 0px;
+  width: 40%;
+  padding: 7px 12px 5px 12px;
   position: relative;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .links-header-text {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -234,10 +234,9 @@
   }
 
   .links-header {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     margin-top: 10px;
-    margin-left: 0px;
-    margin-bottom: 10px;
   }
 
   .links-img {
