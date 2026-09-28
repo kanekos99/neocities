@@ -18,7 +18,11 @@ a:hover {
   text-decoration: underline;
 }
 
-#guestbooks___guestbook-form {
+.guestbook-row {
+  align-items: center;
+}
+
+#c_form {
   width: 100%;
   background: white;
   border-radius: 25px;
@@ -70,6 +74,7 @@ textarea {
   border-radius: 5px;
   color: #2b7379;
   width: 70%;
+  line-height: 1.3;
 }
 
 textarea {
@@ -88,7 +93,7 @@ textarea:focus {
   outline: 0 none;
 }
 
-button[type="submit"] {
+#c_submitButton {
   background: #2b7379;
   color: white;
   font-weight: bold;
@@ -100,15 +105,38 @@ button[type="submit"] {
   transition: background-color 0.2s ease-in-out;
 }
 
-button[type="submit"]:hover {
+#c_submitButton:not(:disabled):hover {
   background: #67a9a9;
 }
 
-#guestbooks___guestbook-made-with {
-  text-align: center;
+#c_submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: all;
 }
 
-#guestbooks___guestbook-messages-header {
+#submitButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#made-with {
+  text-align: right;
+  padding-right: 20px;
+  font-style: italic;
+  font-size: 0.8em;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+
+#made-with a {
+  color: white;
+}
+
+#messages-header {
   margin-top: 1em;
   color: white;
   font-family: "Dosis";
@@ -122,7 +150,7 @@ button[type="submit"]:hover {
   margin: 10px auto 10px auto;
 }
 
-#guestbooks___guestbook-messages-container {
+#c_container {
   margin-top: 1em;
   overflow-y: scroll;
   height: 488px;
@@ -135,9 +163,16 @@ button[type="submit"]:hover {
   );
 }
 
+.c-name {
+  font-size: 1.1em;
+  font-weight: 900;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .messages-box-outer {
   background-color: #67a9a9;
-  padding: 15px;
+  padding: 15px 15px 0px 15px;
   border-radius: 25px;
   box-shadow: 2px 2px #2b7379;
 }
@@ -149,27 +184,80 @@ button[type="submit"]:hover {
   box-shadow: 2px 2px black;
 }
 
-.guestbook-message {
-  background-color: #d6eef3e6;
-  padding: 10px 20px 10px 20px;
-  margin: 0px 20px 11px 20px;
-  border-radius: 10px;
+.loading-text {
+  font-style: italic;
+  opacity: 0.8;
 }
 
-.guestbook-message blockquote {
+.c-comment {
+  background-color: #d6eef3e6;
+  padding: 5px 15px 10px 15px;
+  margin: 0px 20px 11px 20px;
+  border-radius: 10px;
+  border: #0097b2 2px dotted;
+  text-align: left;
+}
+
+.c-comment blockquote {
   margin: 0px;
   line-height: 1.2;
 }
 
-.guestbook-message-reply {
+.c-timestamp {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.c-replyContainer {
   background-color: rgba(255, 238, 209, 0.908);
   margin: 10px 0px 0px 0px;
-  border: dotted #2b737947 3px;
+  border: dotted rgb(127, 101, 68) 2px;
+  color: rgb(127, 101, 68);
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  text-align: right;
+}
+
+.c-text {
+  margin-bottom: 0px;
+  line-height: 1.3;
+}
+
+.c-reply a {
+  color: rgb(127, 101, 68);
+}
+
+.replyButtonContainer {
+  display: flex;
+  justify-content: end;
+  margin-top: 8px;
+}
+
+.c-replyButton {
+  background: #2b7379;
+  color: white;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 30px;
+  padding: 0.1em 1.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.c-replyButton:hover {
+  background: #67a9a9;
+}
+
+#c_replyingText {
+  font-style: italic;
+  opacity: 0.8;
+  line-height: 1;
+  text-align: left;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
@@ -179,34 +267,17 @@ button[type="submit"]:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    45deg,
-    rgba(237, 208, 159, 1) 0%,
-    rgba(171, 215, 216, 1) 60%
-  );
+  background: rgba(148, 152, 157, 0.305);
   width: 10px !important;
   border-radius: 25px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    45deg,
-    rgba(237, 208, 159, 1) 0%,
-    rgba(171, 215, 216, 1) 60%
-  );
+  background: rgba(148, 152, 157, 0.668);
   cursor: pointer;
+  transition: ease-in-out;
 }
-
-/* @media (max-width: 640px) {
-  .container {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-} */
 
 @media only screen and (max-width: 898px) {
   #guestbooks___guestbook-form-container {
@@ -229,20 +300,20 @@ button[type="submit"]:hover {
     margin-bottom: 10px;
   }
 
-  #guestbooks___guestbook-made-with {
-    margin-bottom: 10px;
-  }
-
   .guestbook-image {
     height: 200px;
     cursor: pointer;
   }
 
-  .guestbook-message {
+  .c-comment {
     margin: 0px 5px 11px 5px;
   }
 
-  .guestbook-message-reply {
+  .c-replyContainer {
     margin-top: 10px;
+  }
+
+  #messages-header {
+    width: 90%;
   }
 }

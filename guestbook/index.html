@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <link
@@ -52,9 +52,9 @@
 
       <div class="mt-4">
         <!-- Guestbook  -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center guestbook-row">
           <div class="guestbook-container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
               <div
                 id="guestbooks___guestbook-form-container"
                 class="row justify-content-center p-3"
@@ -66,9 +66,14 @@
                   />
                 </div>
                 <form
-                  id="guestbooks___guestbook-form"
-                  action="https://guestbooks.meadow.cafe/guestbook/897/submit"
+                  id="c_form"
+                  onsubmit="
+                    c_submitButton.disabled = true;
+                    v_submitted = true;
+                  "
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSelPNw6ngJrYdDLv6PiiQO9y9sAJvlVkkEEWTaCoGY8-D1fnA/formResponse"
                   method="post"
+                  target="c_hiddenIframe"
                   autocomplete="off"
                 >
                   <div class="row justify-content-center mb-2">
@@ -76,9 +81,9 @@
                       <p class="input-label"><b>name</b></p>
                       <input
                         type="text"
-                        id="name"
-                        name="name"
                         placeholder="Your Name"
+                        id="entry.679618476"
+                        name="entry.679618476"
                         required
                       />
                     </div>
@@ -87,18 +92,18 @@
                     <div class="guestbooks___input-container">
                       <p class="input-label"><b>website</b></p>
                       <input
-                        type="url"
-                        id="website"
-                        name="website"
+                        type="text"
                         placeholder="Website (optional)"
+                        id="entry.1966533572"
+                        name="entry.1966533572"
                       />
                     </div>
                   </div>
                   <div class="row justify-content-center mb-3">
                     <div class="guestbooks___input-container">
                       <textarea
-                        id="text"
-                        name="text"
+                        id="entry.674350405"
+                        name="entry.674350405"
                         placeholder="Leave your message here..."
                         rows="4"
                         style="
@@ -113,41 +118,54 @@
 
                   <hr class="dotted-divider-2" />
 
-                  <button type="submit">submit</button>
-                  <div id="guestbooks___error-message"></div>
+                  <div id="submitButtonContainer">
+                    <span id="replyTxtContainer"></span>
+                    <button
+                      type="submit"
+                      name="c_submitButton"
+                      id="c_submitButton"
+                    >
+                      submit
+                    </button>
+                  </div>
                 </form>
               </div>
               <div class="messages-container">
                 <div class="messages-box-outer">
                   <div class="messages-box-inner">
-                    <h3 id="guestbooks___guestbook-messages-header">
+                    <h3 id="messages-header">
                       Messages
                       <i class="fa fa-envelope ms-1" aria-hidden="true"></i>
                     </h3>
                     <hr class="dotted-divider-2" />
-                    <div id="guestbooks___guestbook-messages-container"></div>
+                    <div id="c_container">
+                      <p class="loading-text">Loading comments...</p>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div id="made-with">
+                      <small
+                        >Made with
+                        <b
+                          ><a
+                            href="https://virtualobserver.moe/ayano/comment-widget"
+                            target="_blank"
+                            >Ayano's Comment Widget</a
+                          ></b
+                        >
+                      </small>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div id="guestbooks___guestbook-made-with">
-            <small
-              >Powered by
-              <b>
-                <a href="https://guestbooks.meadow.cafe" target="_blank"
-                  >Guestbooks</a
-                ></b
-              ></small
-            >
-          </div>
-        </div>
+        <div id="c_widget"></div>
+        <script src="scripts/comment-widget.js"></script>
       </div>
     </div>
 
     <script src="../common/scripts/sidemenu.js"></script>
-    <script async src="scripts/guestbook.js" crossorigin="anonymous"></script>
   </body>
 </html>

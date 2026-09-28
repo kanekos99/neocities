@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Added a status feed to my <a href="https://kanekos.neocities.org/blog/">blog page</a>`,
+    date: "26/09/2026",
+  },
+  {
     status: `Added a <a href="https://kanekos.neocities.org/links/">links page</a>`,
     date: "20/09/2026",
   },
@@ -87,10 +91,6 @@ const todo = [
     status: "",
   },
   {
-    label: "Status feed for blog",
-    status: "",
-  },
-  {
     label: "Fix guestbook page",
     status: "",
   },
@@ -113,6 +113,10 @@ const todo = [
   {
     label: "Add chat box - Chattable",
     status: "",
+  },
+  {
+    label: "Status feed for blog",
+    status: "completed",
   },
   {
     label: "Update links",
