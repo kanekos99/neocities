@@ -420,13 +420,13 @@ function createComment(data) {
   let comment = document.createElement("div");
 
   // Get the right timestamps
-  let timestamps = convertTimestamp(data.Timestamp);
-  let timestamp;
-  if (s_longTimestamp) {
-    timestamp = timestamps[0];
-  } else {
-    timestamp = timestamps[1];
-  }
+  let timestamp = convertTimestamp(data.Timestamp);
+//   let timestamp;
+//   if (s_longTimestamp) {
+//     timestamp = timestamps[0];
+//   } else {
+//     timestamp = timestamps[1];
+//   }
 
   // Set the ID (uses Name + Full Timestamp format)
   const id = data.Name + "|--|" + data.Timestamp2;
@@ -447,15 +447,12 @@ function createComment(data) {
 
   // Timestamp
   let time = document.createElement("small");
-  const timestampString = timestamp;
-  const timestampObject = new Date(timestampString);
-  const formattedTimestamp = timestampObject.toLocaleDateString("en-US", {
+  const formattedTimestamp = timestamp.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
     year: "numeric",
   });
   time.innerText = " - " + formattedTimestamp;
-  console.log(formattedTimestamp);
   time.className = "c-timestamp";
   comment.appendChild(time);
 
@@ -481,7 +478,9 @@ function convertTimestamp(timestamp) {
   if (s_daylightSavings) {
     offsetDate = isDST(offsetDate);
   }
-  return [offsetDate.toLocaleString(), offsetDate.toLocaleDateString()];
+  // return [offsetDate.toLocaleString(), offsetDate.toLocaleDateString()];
+  // directly use date object
+  return offsetDate;
 }
 // DST checker
 function isDST(date) {
