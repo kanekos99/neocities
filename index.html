@@ -198,7 +198,10 @@
                     class="d-flex justify-content-center flex-wrap mb-3 mt-3"
                   >
                     <a href="vampire-vn" class="directory-img-box">
-                      <img src="home/assets/vampire-vn.png" class="directory-img" />
+                      <img
+                        src="home/assets/vampire-vn.png"
+                        class="directory-img"
+                      />
                     </a>
                     <div class="directory-text-box row align-items-center">
                       <h2 class="directory-text-heading">
@@ -215,9 +218,7 @@
                         vampire yaoi. <br /><br />
                         <i><b>Warning:</b> Page has high image load.</i>
                       </p>
-                      <a class="visit-btn ml-3 py-1" href="vampire-vn"
-                        >Visit</a
-                      >
+                      <a class="visit-btn ml-3 py-1" href="vampire-vn">Visit</a>
                     </div>
                   </div>
                   <div class="row justify-content-center">
@@ -278,10 +279,10 @@
                       >
                     </div>
                   </div>
-                  <!-- <div class="row justify-content-center">
+                  <div class="row justify-content-center">
                     <hr class="dotted-divider" />
-                  </div> -->
-                  <!-- <div
+                  </div>
+                  <div
                     class="d-flex justify-content-center flex-wrap mb-4 mt-3"
                   >
                     <a href="guestbook/index.html" class="directory-img-box">
@@ -291,21 +292,20 @@
                       />
                     </a>
                     <div class="directory-text-box row align-items-center">
-                      <h2 class="directory-text-heading">Guest Book</h2>
+                      <h2 class="directory-text-heading">Guestbook</h2>
                       <p class="directory-text home-text">
-                        A guest book page! Made with
-                        <a href="https://guestbooks.meadow.cafe/"
-                          ><b>Guestbooks</b></a
-                        >
-                        which is a super customisable guest book tool that I
-                        highly recommend for anyone who wants more control over
-                        their designs. Feel free to leave a message!
+                        My guestbook page returns, now made with a modified
+                        version of
+                        <a
+                          href="https://virtualobserver.moe/ayano/comment-widget"
+                          >Ayano's Comment Widget</a
+                        >. Feel free to leave a message!
                       </p>
                       <a class="visit-btn ml-3 py-1" href="guestbook/index.html"
                         >Visit</a
                       >
                     </div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -499,6 +499,12 @@
       </div>
     </div>
 
+    <script>
+      if (navigator.userAgent === "Screenjesus") {
+        document.body.innerHTML =
+          '<img src="./home/assets/thumbnail.png" style="width:100vw;height:100vh;object-fit:cover;">';
+      }
+    </script>
     <script src="common/scripts/sidemenu.js"></script>
     <script src="home/scripts/changelog.js"></script>
     <script src="home/scripts/main.js"></script>
