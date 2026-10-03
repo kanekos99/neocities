@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <link
@@ -58,7 +58,9 @@
               <div class="stats-item">
                 <label>name</label>kanekos/ kaneko/ kan
               </div>
-              <div class="stats-item"><label>level</label>26</div>
+              <div class="stats-item">
+                <label>level</label><span id="level_val">...loading...</span>
+              </div>
               <div class="stats-item"><label>class</label>noob artist</div>
               <div class="stats-item">
                 <label>abilities</label>drawing, writing, coding
@@ -70,7 +72,35 @@
                 <label>pronouns</label>she/her, they/them
               </div>
             </div>
-            <div class="stats-box-2 shadow">
+            <div class="stats-box-2 current-box">
+              <div class="current-row shadow">
+                <div class="current-label">
+                  currently reading<i
+                    class="fa fa-book ms-2"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p class="current-text" id="reading">...loading...</p>
+              </div>
+              <div class="current-row shadow">
+                <div class="current-label">
+                  listening to<i
+                    class="fa fa-music ms-2"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p class="current-text">
+                  <a href="" target="_blank" id="listening">...loading...</a>
+                </p>
+              </div>
+              <div class="current-row shadow">
+                <div class="current-label">
+                  working on<i class="fa fa-wrench ms-2" aria-hidden="true"></i>
+                </div>
+                <p class="current-text" id="working">...loading...</p>
+              </div>
+            </div>
+            <!-- <div class="stats-box-2 shadow">
               <div class="progress-row">
                 <label>Speed</label>
                 <div class="progress">
@@ -131,7 +161,7 @@
                   ></div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="description-container">
             <div class="row justify-content-end">
@@ -154,23 +184,17 @@
                   already offers all the features I could every want as an
                   archive for my OCs.<br /><br />
 
-                  I'm really interested in game dev and my goal is to make a
-                  completed indie game. I have several wip RPGMaker games and
-                  I’m trying to find some time to learn Godot. However, I also
-                  have too many projects and a very bad track record of
-                  completing them.
+                  I'm really interested in game dev and I've participated in a
+                  couple of visual novel game jams. You can check out my games
+                  <a href="https://kanekos99.itch.io/">here</a>! I always have
+                  some game or art project in the back of my mind, but I have a
+                  very bad track record of completing them.
 
                   <br /><br />
                   When not drawing or working on my personal projects, I spend
-                  the majority of my time playing Gacha games. I’ve played quite
-                  a number of Gacha games but currently Honkai Star Rail is at
-                  the forefront of my interests. I tend to hyper-fixate on
-                  <a href="https://kanekos.neocities.org/phainon-shrine/"
-                    >certain fictional characters</a
-                  >
-                  for a period of time and that basically becomes my whole
-                  personality until I get over them (or find someone else to
-                  hyper fixate on).
+                  my time playing Gacha games (although I've been trying to quit
+                  recently) or reading <s>danmei.</s> I guess working on this
+                  website can be considered a hobby now too.
 
                   <br /><br />
                   I also love cosy games that involve decorationg/ building/
@@ -178,6 +202,9 @@
                   nonstop for several days before dropping it altogether and
                   then picking it back up again months later for the cycle to
                   start all over again.
+                  <div id="about-last-updated" class="mt-3">
+                    <i><b>Last Updated</b>: 3 October 2026</i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -352,7 +379,7 @@
         <i
           class="fa fa-chevron-left modal-arrow modal-arrow-left"
           aria-hidden="true"
-          onclick="showNextOrPrevImg(-1);"
+          onclick="showNextOrPrevImg(-1)"
         ></i>
       </div>
       <div class="modal-dialog modal-dialog-centered">
@@ -368,7 +395,7 @@
         <i
           class="fa fa-chevron-right modal-arrow modal-arrow-right"
           aria-hidden="true"
-          onclick="showNextOrPrevImg(1);"
+          onclick="showNextOrPrevImg(1)"
         ></i>
       </div>
     </div>
@@ -376,7 +403,8 @@
     <script src="../common/scripts/sidemenu.js"></script>
     <script src="./scripts/catnekos.js"></script>
     <script src="./scripts/inventory.js"></script>
-    <script src="./scripts/live2d.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kanekos99/neocities@main/about/scripts/live2d.js"></script>
+    <script src="./scripts/currently.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

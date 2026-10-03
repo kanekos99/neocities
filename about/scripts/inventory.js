@@ -30,6 +30,11 @@ const games = [
     link: "#",
   },
   {
+    icon: "./assets/inventory/games/endfield.png",
+    name: "Arknights: Endfield",
+    link: "#",
+  },
+  {
     icon: "./assets/inventory/games/acpc.png",
     name: "Animal Crossing: Pocket Camp",
     link: "#",
@@ -37,6 +42,11 @@ const games = [
   {
     icon: "./assets/inventory/games/acnh.jpg",
     name: "Animal Crossing: New Horizons",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/games/tomodachi_life.png",
+    name: "Tomodachi Life: Living the Dream",
     link: "#",
   },
   {
@@ -98,6 +108,16 @@ const shows = [
     link: "#",
   },
   {
+    icon: "./assets/inventory/shows/gundam_witch.png",
+    name: "Mobile Suit Gundam: The Witch from Mercury",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/shows/castlevania.png",
+    name: "Castlevania",
+    link: "#",
+  },
+  {
     icon: "./assets/inventory/shows/promare.png",
     name: "Promare",
     link: "#",
@@ -109,7 +129,7 @@ const shows = [
   },
   {
     icon: "./assets/inventory/shows/csm.png",
-    name: "Chainsaw Man – The Movie: Reze Arc",
+    name: "Chainsaw Man - The Movie: Reze Arc",
     link: "#",
   },
   {
@@ -120,6 +140,11 @@ const shows = [
   {
     icon: "./assets/inventory/shows/tgcf.png",
     name: "Heaven Official's Blessing",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/shows/link_click.png",
+    name: "Link Click",
     link: "#",
   },
   {
@@ -140,6 +165,11 @@ const shows = [
   {
     icon: "./assets/inventory/shows/xmfc.png",
     name: "X-Men: First Class",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/shows/iwtv.png",
+    name: "Interview with the Vampire",
     link: "#",
   },
 ];
@@ -166,8 +196,18 @@ const books = [
     link: "#",
   },
   {
+    icon: "./assets/inventory/books/bab.png",
+    name: "Case File Compendium",
+    link: "#",
+  },
+  {
     icon: "./assets/inventory/books/svsss.png",
     name: "The Scum Villain's Self-Saving System",
+    link: "#",
+  },
+  {
+    icon: "./assets/inventory/books/qjj.png",
+    name: "Qiang Jin Jiu",
     link: "#",
   },
   {

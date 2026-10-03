@@ -10,6 +10,7 @@
 .stats-container {
   min-width: 40%;
   margin-right: 5%;
+  max-width: 41%;
 }
 
 .stats-img {
@@ -64,6 +65,74 @@
   margin-top: 15px;
 }
 
+.current-box {
+  background-color: transparent;
+  padding: 0px;
+}
+
+.current-row {
+  text-align: left;
+  background-color: #d6eef3;
+  border-radius: 15px;
+  margin-bottom: 8px;
+  padding: 10px 10px 7px 10px;
+}
+
+.current-row:nth-of-type(2) {
+  background-color: #ffeec8;
+  color: #69474a;
+}
+
+.current-row:nth-of-type(2) .current-label {
+  background-color: #e5c99c;
+  color: #69474a;
+}
+
+.current-row:nth-of-type(3) {
+  background-color: #e1e2ff;
+  color: #5e5b8e;
+}
+
+.current-row:nth-of-type(3) .current-label {
+  background-color: #a3a5cf;
+  color: white;
+}
+
+.current-text {
+  margin: 7px 0px 3px 0px;
+  padding: 5px 20px 7px 20px;
+  line-height: 1.2;
+  width: 100%;
+  text-align: right;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.current-text a {
+  color: #69474a;
+  text-decoration: underline dotted 2px #69474a47;
+}
+
+.current-text a:hover {
+  font-weight: 900;
+  text-decoration: underline solid 2px #69474aa9;
+  transition: ease-in-out 0.2s;
+}
+
+.current-label {
+  background-color: #67a9a9;
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 2px 15px;
+  text-align: center;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Dosis";
+}
+
 .progress-row {
   display: flex;
   align-items: center;
@@ -111,6 +180,13 @@
 
 .description-box-inner a:hover {
   color: rgba(237, 208, 159, 1);
+}
+
+#about-last-updated {
+  text-align: right;
+  width: 100%;
+  font-size: 0.9em;
+  opacity: 80%;
 }
 
 .inventory-container {
@@ -459,7 +535,6 @@ canvas {
 
   .description-header {
     width: 100%;
-    margin-top: 10px;
     text-align: left;
   }
 
@@ -535,5 +610,9 @@ canvas {
 
   .tab-pane-body {
     margin-left: 0px;
+  }
+
+  .current-label {
+    width: 80%;
   }
 }

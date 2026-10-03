@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Some new art added to the <a href="https://kanekos.neocities.org/gallery/">gallery</a> as well as a new character design section`,
+    date: "30/09/2026",
+  },
+  {
     status: `<a href="https://kanekos.neocities.org/guestbook/">Guestbook</a> page is back! Messages are much appreciated ^^`,
     date: "28/09/2026",
   },
@@ -96,6 +100,26 @@ const todo = [
   },
   {
     label: "Make new game page",
+    status: "",
+  },
+  {
+    label: "Add animation gallery",
+    status: "",
+  },
+  {
+    label: "Add filter function to gallery",
+    status: "",
+  },
+  {
+    label: "Add noticeboard to home page",
+    status: "",
+  },
+  {
+    label: "Adjust blog UI",
+    status: "",
+  },
+  {
+    label: "Adjust home page directory UI",
     status: "",
   },
   {

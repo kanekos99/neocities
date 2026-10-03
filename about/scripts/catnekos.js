@@ -1,5 +1,7 @@
 const catnekos = [
   "./assets/catnekos/artist.png",
+  "./assets/catnekos/crying_cat.png",
+  "./assets/catnekos/catnekos_status.png",
   "./assets/catnekos/chongus.png",
   "./assets/catnekos/create-a-date.png",
   "./assets/catnekos/cribz.jpg",
@@ -10,6 +12,7 @@ const catnekos = [
   "./assets/catnekos/windy.jpg",
   "./assets/catnekos/rip.png",
   "./assets/catnekos/af2024.png",
+  "./assets/catnekos/guestbook-img.png",
   "./assets/catnekos/business_cat.png",
   "./assets/catnekos/thing.png",
   "./assets/catnekos/slep.png",

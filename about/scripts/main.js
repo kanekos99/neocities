@@ -27,6 +27,8 @@ const app = {
     loadInventory(shows, shows_container);
     loadInventory(books, books_container);
     loadImages();
+    loadCurrently();
+    loadLevel();
   },
 };
 
@@ -57,11 +59,36 @@ function loadInventory(category, container) {
   });
   //initiate tooltips
   const tooltipTriggerList = document.querySelectorAll(
-    '[data-bs-toggle="tooltip"]'
+    '[data-bs-toggle="tooltip"]',
   );
   const tooltipList = [...tooltipTriggerList].map(
-    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
   );
+}
+
+/*------------------------ for level ------------------------------------*/
+
+function loadLevel() {
+  let level = new Date().getFullYear() - 1999;
+  const currentMonth = new Date().getMonth();
+  if (currentMonth < 9) {
+    level = level - 1;
+  }
+  const level_val = document.getElementById("level_val");
+  level_val.innerHTML = level;
+}
+
+/*------------------------ for currently ------------------------------------*/
+
+function loadCurrently() {
+  const currentlyReading = document.getElementById("reading");
+  const currentlyListening = document.getElementById("listening");
+  const currentlyWorkingOn = document.getElementById("working");
+
+  currentlyReading.innerHTML = reading[0];
+  currentlyWorkingOn.innerHTML = working_on[0];
+  currentlyListening.innerHTML = listening[0].name;
+  currentlyListening.href = listening[0].link;
 }
 
 /*------------------------ for image gallery -------------------------------- */
