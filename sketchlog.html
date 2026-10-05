@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaneko's Sketch Log</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/sketchlog-styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="x-icon" href="neutral.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <style>
+    
+    
+    </style>
+  
+  </head>
+  
+ 
+  <body>
+  
+  
+  <div class="side-menu" id="side-menu">
+  
+    <a class="side-menu-button" href="index.html"><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Home</a>
+    <a class="side-menu-button" href="sketchlog.html"><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Sketch Log</a>
+  </div>
+  
+  <div class="main-body" id="main-body">
+  
+    <div class="menu-icon-container"><i class="fa fa-bars menu-icon" onClick="toggleSideMenu();"></i></div>
+   
+    <div class="title-box">Kaneko's Sketch Log</div>
+    
+    <div class="block">
+     <div class="odd-image-box"><img class="sketch-img" src="sketches/failed-attempt.png" onClick="showFullSize(this);" data-img="sketches/failed-attempt-full.png"></div>
+      <div class="odd-info-box">
+        <div class="img-title-box">The Title of this Piece is Failed Attempt</div>
+        <div class="img-date-box">07/05/2022 - 12:07am</div>
+        <div class="text-box"><div class="img-text-content">It is a failed attempt at drawing in Clip Studio Paint again. That software has so many useful tools, but drawing any kind of line work in it feels like complete ass. My hand hurts.</div></div>
+        <div class="odd-triangle">▼</div>
+      </div>
+    </div>
+    
+    <div class="block">
+     <div class="odd-image-box"><img class="sketch-img" src="sketches/yanwen-cover.png" onClick="showFullSize(this);" data-img="sketches/yanwen.png"></div>
+      <div class="odd-info-box">
+        <div class="img-title-box">Yanwen</div>
+        <div class="img-date-box">07/05/2022 - 12:03am</div>
+        <div class="text-box"><div class="img-text-content">Hairstyle design for an OC, Yanwen. I really struggled with this one for some reason. I had a vision for this in my mind but I couldn't make it work, so I had to settle for this. Random trivia but this lad is supposed to be a Pomeranian and Husky (Pomsky) mix.</div></div>
+        <div class="odd-triangle">▼</div>
+      </div>
+    </div>
+    
+    
+    <div class="block">
+     <div class="odd-image-box"><img class="sketch-img" src="sketches/sakar-cover.png" onClick="showFullSize(this);" data-img="sketches/sakar.png"></div>
+      <div class="odd-info-box">
+        <div class="img-title-box">Making Responsive Websites is Hard</div>
+        <div class="img-date-box">05/05/2022 - 7:13pm</div>
+        <div class="text-box"><div class="img-text-content">Uploading an image with a non-white background for testing</div></div>
+        <div class="odd-triangle">▼</div>
+      </div>
+    </div>
+  
+    <div class="block">
+     <div class="odd-image-box"><img class="sketch-img" src="sketches/kai-cover.png" onClick="showFullSize(this);" data-img="sketches/kai-design.png"></div>
+      <div class="odd-info-box">
+        <div class="img-title-box">Another Pointless Post for Testing</div>
+        <div class="img-date-box">05/05/2022 - 12:26pm</div>
+        <div class="text-box"><div class="img-text-content">This is my second post but it has very little text</div></div>
+        <div class="odd-triangle">▼</div>
+      </div>
+    </div>
+  
+    
+    <div class="block">
+      <div class="odd-image-box"><img class="sketch-img" src="sketches/fem-allie-cover.png" onClick="showFullSize(this);" data-img="sketches/fem-allie.png"></div>
+      <div class="odd-info-box">
+        <div class="img-title-box">Welcome to My Sketch Log</div>
+        <div class="img-date-box">05/05/2022 - 12:26pm</div>
+        <div class="text-box"><div class="img-text-content">Here I will post my sketches. But actually this is just a site for me to practice my web programming skills. Click on an image to view the full sized version. Here I am writing more words just to test the speech bubble. Yes I am procrastinating by doing this instead of studying for finals. Wow this speech bubble is pretty big. I'm running out of things to write. In the interest of filling space, I will describe the sketch featured in this post. It features a genderbent version of one of my original characters, Ailithir.</div></div>
+        <div class="odd-triangle">▼</div>
+      </div>
+    </div>
+  
+  </div>
+    
+  
+  
+  <div id="img-full-view-container">
+    <div class="close-btn" onclick="closeModal();">&times;</div>
+    <img id="modal-image">
+  
+  </div>
+  
+  
+  
+  <br><br>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  const body = document.querySelector("body");
+  var imgModal = $("#img-full-view-container");
+  var imgModalImg = $("#modal-image");
+  var sideBar = $("#side-menu")
+  var mainBody = $("#main-body")
+
+  imgModal.hide();
+  
+  function showFullSize(targetImg){
+    $(document.body).addClass("lock-scroll");
+    var fullImgURL = $(targetImg).attr("data-img") 
+    document.getElementById("modal-image").src = fullImgURL;
+    imgModal.fadeIn();
+    
+  }
+  
+  function closeModal(){
+    if (!menuOpen){
+      $(document.body).removeClass("lock-scroll");
+    }
+    imgModal.fadeOut();
+
+  }
+  
+  $(document).click(function (e) {
+    if ($(e.target).is('#img-full-view-container')) {
+        closeModal();
+    }
+  });
+  
+  var menuOpen = false;
+  function toggleSideMenu() {
+    if (menuOpen){
+      sideBar.removeClass("active");
+      mainBody.removeClass("slide-right");
+      $(document.body).removeClass("lock-scroll");
+      menuOpen = false;
+    } else {
+      sideBar.addClass("active");
+      mainBody.addClass("slide-right");
+      $(document.body).addClass("lock-scroll");
+      menuOpen = true;
+    }
+   
+  }
+  
+
+  
+  </script>
+  
+    
+  </body>
+</html>
