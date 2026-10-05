@@ -1,5 +1,13 @@
 const changelog = [
   {
+    status: `Revamped my sketch log page at last! Check it out <a href="https://kanekos.neocities.org/sketchlog/">here!</a>`,
+    date: "05/10/2026",
+  },
+  {
+    status: `An <a href="https://kanekos.neocities.org/gallery/#animation">animation gallery</a> has been added, as well as some minor updates to the home page and about page`,
+    date: "03/10/2026",
+  },
+  {
     status: `Some new art added to the <a href="https://kanekos.neocities.org/gallery/">gallery</a> as well as a new character design section`,
     date: "30/09/2026",
   },
@@ -103,10 +111,6 @@ const todo = [
     status: "",
   },
   {
-    label: "Add animation gallery",
-    status: "",
-  },
-  {
     label: "Add filter function to gallery",
     status: "",
   },
@@ -127,16 +131,20 @@ const todo = [
     status: "",
   },
   {
-    label: "Revamp sketch log page",
-    status: "",
-  },
-  {
     label: "OC page",
     status: "",
   },
   {
     label: "Add chat box - Chattable",
     status: "",
+  },
+  {
+    label: "Revamp sketch log page",
+    status: "completed",
+  },
+  {
+    label: "Add animation gallery",
+    status: "completed",
   },
   {
     label: "Fix guestbook page",

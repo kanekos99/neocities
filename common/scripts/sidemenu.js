@@ -6,6 +6,9 @@ const sideMenuHTML = `
       <a class="side-menu-button" href="https://kanekos.neocities.org/gallery/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Gallery</a
       >
+      <a class="side-menu-button" href="https://kanekos.neocities.org/sketchlog/"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Sketch Log</a
+      >
       <a class="side-menu-button" href="https://kanekos.neocities.org/dressup/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Dress Up Game</a
       >
