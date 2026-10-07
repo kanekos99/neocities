@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Very minor UI update to my <a href="https://kanekos.neocities.org/blog/">blog page</a> and added a <a href="https://kanekos.neocities.org/blog/posts/2026-10-06-Basic-Renpy-Tutorial/">new blog post</a> on the basics of Ren'Py`,
+    date: "06/10/2026",
+  },
+  {
     status: `Revamped my sketch log page at last! Check it out <a href="https://kanekos.neocities.org/sketchlog/">here!</a>`,
     date: "05/10/2026",
   },
@@ -119,10 +123,6 @@ const todo = [
     status: "",
   },
   {
-    label: "Adjust blog UI",
-    status: "",
-  },
-  {
     label: "Adjust home page directory UI",
     status: "",
   },
@@ -137,6 +137,10 @@ const todo = [
   {
     label: "Add chat box - Chattable",
     status: "",
+  },
+  {
+    label: "Adjust blog UI",
+    status: "completed",
   },
   {
     label: "Revamp sketch log page",

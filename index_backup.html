@@ -36,6 +36,19 @@
   </head>
 
   <body>
+    <!--------------- Old side menu - can ignore ---------------->
+    <!-- <div class="side-menu" id="side-menu">
+      <a class="side-menu-button" href="index.html"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Home</a
+      >
+      <a class="side-menu-button" href="gallery"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Gallery</a
+      >
+      <a class="side-menu-button" href="dressup"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Dress Up Game</a
+      >
+    </div> -->
+
     <div class="main-body" id="main-body">
       <div class="menu-icon-container">
         <i class="fa fa-bars menu-icon shadow" onClick="toggleSideMenu();"></i>
@@ -96,144 +109,6 @@
                   about me
                   <i class="fa fa-paw" aria-hidden="true"></i>
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!---------------Notice Board---------------->
-        <div class="row justify-content-center px-2 pb-4">
-          <div class="accordion" id="noticeboard-accordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#noticeboard-box"
-                  aria-expanded="true"
-                  aria-controls="noticeboard-box"
-                >
-                  <i class="fa fa-bell home-icon" aria-hidden="true"></i>
-                  Noticeboard
-                </button>
-              </h2>
-              <div
-                id="noticeboard-box"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-              >
-                <div class="accordion-body shadow noticeboard-body">
-                  <div class="latest-posts-box notice-box">
-                    <h4>
-                      <i class="fa fa-newspaper-o me-2" aria-hidden="true"></i
-                      >latest blog posts
-                    </h4>
-                    <hr class="dotted-divider-3" />
-                    <div class="notice-post">
-                      <a
-                        href="https://kanekos99.github.io/blog/posts/2026-10-06-Basic-Renpy-Tutorial/"
-                        class="notice-post-title"
-                        >A Very Basic Ren'Py Tutorial</a
-                      >
-                      <p>
-                        A super duper extremely basic Ren'Py scripting tutorial
-                        and quick start guide.
-                      </p>
-                    </div>
-                    <div class="notice-post">
-                      <a
-                        href="https://kanekos99.github.io/blog/posts/2026-09-28-100-Questions-for-Webmasters/"
-                        class="notice-post-title"
-                        >100 Questions for Webmasters</a
-                      >
-                      <p>
-                        Answering 100 Questions for Webmasters by MOUSELING.net
-                        because I'm bored...
-                      </p>
-                    </div>
-                    <div class="notice-post">
-                      <a
-                        href="https://kanekos99.github.io/blog/posts/2026-09-20-Half-a-Year-of-Game-Dev/"
-                        class="notice-post-title"
-                        >0.5 Years of Game (Visual Novel) Dev what the fuck is
-                        this</a
-                      >
-                      <p>
-                        Part life update and part yapping about the visual
-                        novels I've made in the past half a year or so.
-                      </p>
-                    </div>
-                    <hr class="dotted-divider-3" />
-                    <a
-                      href="https://kanekos.neocities.org/blog/"
-                      class="notice-button"
-                      >view blog</a
-                    >
-                  </div>
-                  <div class="notice-others-box">
-                    <div class="announcement-box">
-                      <div class="notice-box announce-box">
-                        <div class="announce-header">
-                          <h4 class="announcement-title">
-                            <i
-                              class="fa fa-bullhorn me-2"
-                              aria-hidden="true"
-                            ></i
-                            >announcements
-                          </h4>
-                          <div
-                            class="announce-changelog-btn-wrapper web-only"
-                          >
-                            <a
-                              href="#changelog"
-                              class="notice-button go-to-changelog-btn"
-                            >
-                              go to change log
-                              <i class="fa fa-caret-down" aria-hidden="true"></i
-                            ></a>
-                          </div>
-                        </div>
-                        <div class="announce-inner">
-                          <div class="announce-changelog">
-                            <div class="changelog-heading">
-                              latest site update<span
-                                class="announce-changelog-date"
-                                >06-10-2026</span
-                              >
-                            </div>
-                            <span
-                              >Very minor UI update to my blog page and added a
-                              new blog post on the basics of Ren'Py
-                            </span>
-                          </div>
-                          <div class="announce-changelog">
-                            <div class="changelog-heading">other news</div>
-                            <span>No other annoucements right now! </span>
-                          </div>
-                        </div>
-                        <div class="announce-changelog-btn-wrapper mobile-only">
-                          <a
-                            href="#changelog"
-                            class="notice-button go-to-changelog-btn"
-                          >
-                            go to change log
-                            <i class="fa fa-caret-down" aria-hidden="true"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="latest-art-box notice-box">
-                      <h4>
-                        <i
-                          class="fa fa-paint-brush me-2"
-                          aria-hidden="true"
-                        ></i>
-                        featured art
-                      </h4>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -568,9 +443,7 @@
                     <div
                       class="update-text-container px-4 pb-3 pt-4"
                       id="changelog"
-                    >
-                      <a name="changelog"></a>
-                    </div>
+                    ></div>
                   </div>
                 </div>
               </div>

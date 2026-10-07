@@ -10,6 +10,7 @@ const sortabeletodo = document.getElementById("todo-list");
 const app = {
   init: function () {
     console.log("Hello world :)");
+    console.log(images);
     loadChangelog();
     loadToDo();
   },
