@@ -559,6 +559,11 @@ label.form-check-label:focus,
   text-align: left;
 }
 
+.notice-post p a {
+  color: #2b7379;
+  font-weight: bold;
+}
+
 .notice-post p i {
   font-size: 0.8rem;
   color: #67a9a9;

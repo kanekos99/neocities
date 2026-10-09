@@ -18,6 +18,7 @@ const announcementChangeLogText = document.getElementById(
 const featuredArtGallery = document.getElementById("featured-art-gallery");
 const latestArtGallery = document.getElementById("latest-art-gallery");
 const modalImg = document.getElementById("modal-image");
+const blogPostsContainer = document.getElementById("notice-posts-container");
 
 const app = {
   init: function () {
@@ -26,6 +27,7 @@ const app = {
     loadToDo();
     loadAnnoucements();
     loadArt();
+    loadBlogPosts();
   },
 };
 
@@ -120,6 +122,34 @@ function showImage(image) {
   modalImg.onload = function () {
     modalImg.style.display = "block";
   };
+}
+
+function loadBlogPosts() {
+  blog_posts.slice(0, 3).forEach((post) => {
+
+    const postDate = post.date.split("T")[0]
+
+    const postHTML = `
+      <div class="notice-post">
+        <p>
+          <span class="notice-post-date">${postDate}</span>
+          <i
+            class="fa fa-angle-double-right me-1"
+            aria-hidden="true"
+          ></i>
+          <a
+            href="https://kanekos.neocities.org${post.url}"
+            class="notice-post-title"
+            >${post.title}</a
+          >
+          <span>
+            - ${post.description}
+          </span>
+        </p>
+      </div>
+    `;
+    blogPostsContainer.insertAdjacentHTML("beforeend", postHTML);
+  });
 }
 
 new Sortable(sortabeletodo, {
