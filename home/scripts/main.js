@@ -93,7 +93,7 @@ function loadArt() {
     featuredArtGallery.insertAdjacentHTML("beforeend", imageHTML);
   });
 
-  images.slice(0, 3).forEach((image) => {
+  sketch_images.slice(0, 3).forEach((image) => {
     const baseUrl = "https://kanekos99.github.io/sketch-gallery";
     const imageUrl = image.replace(/^\./, baseUrl);
 

@@ -94,7 +94,6 @@ body {
   text-align: justify;
   line-height: 1.2;
   color: #2b7379;
-  margin-bottom: 0px;
 }
 
 .home-image {
@@ -522,7 +521,7 @@ label.form-check-label:focus,
   background-color: #d6eef3;
   border-radius: 10px;
   /* border: 3px dotted #2b737933; */
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .notice-post-heading {
@@ -546,16 +545,16 @@ label.form-check-label:focus,
 }
 
 .notice-post p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   /* margin-left: 15px; */
   margin-bottom: 0px;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
   color: #2b7379;
   text-align: left;
   display: -webkit-box;
-  line-height: 1.2;
+  line-height: 1.1;
   -webkit-box-orient: vertical;
   text-align: left;
 }
@@ -575,7 +574,7 @@ label.form-check-label:focus,
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 162px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 900;
   color: #2b7379;
   text-align: right;
@@ -598,8 +597,9 @@ label.form-check-label:focus,
   font-weight: 900;
   font-family: "Dosis";
   border-radius: 10px;
-  padding: 9px 15px;
+  padding: 1px 15px 2px 15px;
   display: inline-block;
+  font-size: 1rem;
 }
 
 .notice-button:hover {
@@ -735,11 +735,6 @@ label.form-check-label:focus,
   text-align: justify;
   line-height: 1.1;
   display: inline-block;
-  /* -webkit-line-clamp: 3;
-  line-clamp: 3;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  display: -webkit-box; */
 }
 
 .announce-changelog-box {
@@ -951,10 +946,6 @@ label.form-check-label:focus,
     display: block;
   }
 
-  .notice-board-wrapper {
-    margin-top: 20px;
-  }
-
   .img-box {
     width: 100%;
     padding-right: 0;
@@ -1048,6 +1039,10 @@ label.form-check-label:focus,
   }
 
   /*---------------------------- Noticeboard -----------------------------*/
+
+  .notice-board-wrapper {
+    margin-top: 10px;
+  }
 
   .noticeboard-body {
     display: grid;
