@@ -13,7 +13,6 @@
     />
 
     <link rel="stylesheet" type="text/css" href="home/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="home/styles/modal.css" />
     <link rel="stylesheet" type="text/css" href="common/styles/sidemenu.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -44,7 +43,7 @@
 
       <div class="container home-page mt-4">
         <!---------------About Page---------------->
-        <div class="pt-3 pb-4 landing-wrapper">
+        <div class="row justify-content-center pt-5 pb-4">
           <div class="d-flex flex-wrap justify-content-center about-wrapper">
             <div class="home-image-wrapper">
               <img
@@ -65,15 +64,15 @@
               </div>
             </div>
             <div
-              class="row justify-content-center home-container about-box mt-2"
+              class="row justify-content-center home-container about-box mt-3"
             >
               <h1 class="site-heading py-3 mb-0">
                 <i class="fa fa-home home-icon" aria-hidden="true"></i>Kaneko's
                 Space
               </h1>
               <div class="home-body">
-                <div class="home-text-container px-4 pt-3 shadow">
-                  <p class="home-text">
+                <div class="home-text-container px-5 pt-3 shadow">
+                  <p class="home-text pt-3">
                     Hello and welcome to my page! You can call me Kan/ Kaneko/
                     Kanekos/ whatever. I am an hobbyist artist who really likes
                     to make OCs. I also code stuff sometimes. <br />
@@ -100,253 +99,138 @@
               </div>
             </div>
           </div>
-          <!---------------Notice Board---------------->
-          <div
-            class="row justify-content-center px-2 align-items-end notice-board-wrapper"
-          >
-            <div class="accordion" id="noticeboard-accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#noticeboard-box"
-                    aria-expanded="true"
-                    aria-controls="noticeboard-box"
-                  >
-                    <i class="fa fa-bell home-icon" aria-hidden="true"></i>
-                    Notice Board
-                  </button>
-                </h2>
-                <div
-                  id="noticeboard-box"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
+        </div>
+
+        <!---------------Notice Board---------------->
+        <div class="row justify-content-center px-2 pb-4">
+          <div class="accordion" id="noticeboard-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#noticeboard-box"
+                  aria-expanded="true"
+                  aria-controls="noticeboard-box"
                 >
-                  <div class="accordion-body shadow noticeboard-body">
-                    <div class="latest-posts-box notice-box">
-                      <h4>
-                        <i
-                          class="fa fa-newspaper-o me-2"
-                          aria-hidden="true"
-                        ></i>
-                        latest blog posts
-                      </h4>
-                      <hr class="dotted-divider-3" />
-                      <div class="notice-post">
-                        <p>
-                          <span class="notice-post-date">06-10-2026</span>
-                          <i
-                            class="fa fa-angle-double-right me-1"
-                            aria-hidden="true"
-                          ></i>
-                          <a
-                            href="https://kanekos.neocities.org/blog/posts/2026-10-06-Basic-Renpy-Tutorial/"
-                            class="notice-post-title"
-                            >A Very Basic Ren'Py Tutorial</a
-                          >
-                          <span>
-                            - A super duper extremely basic Ren'Py scripting
-                            tutorial and quick start guide.
-                          </span>
-                        </p>
-                      </div>
-                      <div class="notice-post">
-                        <p>
-                          <span class="notice-post-date">28-09-2026</span>
-                          <i
-                            class="fa fa-angle-double-right me-1"
-                            aria-hidden="true"
-                          ></i>
-                          <a
-                            href="https://kanekos.neocities.org/blog/posts/2026-09-28-100-Questions-for-Webmasters/"
-                            class="notice-post-title"
-                            >100 Questions for Webmasters</a
-                          >
-                          <span>
-                            - Answering 100 Questions for Webmasters by
-                            MOUSELING.net because I'm bored...
-                          </span>
-                        </p>
-                      </div>
-                      <div class="notice-post">
-                        <p>
-                          <span class="notice-post-date">20-09-2026</span>
-                          <i
-                            class="fa fa-angle-double-right me-1"
-                            aria-hidden="true"
-                          ></i>
-                          <a
-                            href="https://kanekos.neocities.org/blog/posts/2026-09-20-Half-a-Year-of-Game-Dev/"
-                            class="notice-post-title"
-                            >0.5 Years of Game (Visual Novel) Dev</a
-                          >
-                          <span>
-                            - Part life update and part yapping about the visual
-                            novels I've made in the past half a year or so.
-                          </span>
-                        </p>
-                      </div>
-                      <hr class="dotted-divider-3" />
+                  <i class="fa fa-bell home-icon" aria-hidden="true"></i>
+                  Noticeboard
+                </button>
+              </h2>
+              <div
+                id="noticeboard-box"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+              >
+                <div class="accordion-body shadow noticeboard-body">
+                  <div class="latest-posts-box notice-box">
+                    <h4>
+                      <i class="fa fa-newspaper-o me-2" aria-hidden="true"></i
+                      >latest blog posts
+                    </h4>
+                    <hr class="dotted-divider-3" />
+                    <div class="notice-post">
                       <a
-                        href="https://kanekos.neocities.org/blog/"
-                        class="notice-button"
+                        href="https://kanekos99.github.io/blog/posts/2026-10-06-Basic-Renpy-Tutorial/"
+                        class="notice-post-title"
+                        >A Very Basic Ren'Py Tutorial</a
                       >
-                        view blog
-                        <i
-                          class="fa fa-caret-right ms-5 mt-1"
-                          aria-hidden="true"
-                        ></i
-                      ></a>
+                      <p>
+                        A super duper extremely basic Ren'Py scripting tutorial
+                        and quick start guide.
+                      </p>
                     </div>
-                    <div class="notice-others-box">
-                      <div class="announcement-box">
-                        <div class="notice-box announce-box">
-                          <div class="announce-header">
-                            <h4 class="announcement-title">
-                              <i
-                                class="fa fa-bullhorn me-2"
-                                aria-hidden="true"
-                              ></i
-                              >announcements
-                            </h4>
-                            <div
-                              class="announce-changelog-btn-wrapper web-only"
-                            >
-                              <a
-                                href="#changelog"
-                                class="notice-button go-to-changelog-btn"
-                              >
-                                change log
-                                <i
-                                  class="fa fa-caret-down ms-3 mt-1"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </div>
-                          </div>
-                          <div class="announce-inner">
-                            <div class="announce-changelog">
-                              <div class="changelog-heading">
-                                latest site update<span
-                                  class="announce-changelog-date"
-                                  id="announce-changelog-date"
-                                ></span>
-                              </div>
-                              <div class="announce-changelog-box">
-                                <span id="announce-changelog-text"> </span>
-                              </div>
-                            </div>
-                            <div class="announce-changelog">
-                              <div class="changelog-heading">other news</div>
-                              <span>No other annoucements right now! </span>
-                            </div>
-                          </div>
+                    <div class="notice-post">
+                      <a
+                        href="https://kanekos99.github.io/blog/posts/2026-09-28-100-Questions-for-Webmasters/"
+                        class="notice-post-title"
+                        >100 Questions for Webmasters</a
+                      >
+                      <p>
+                        Answering 100 Questions for Webmasters by MOUSELING.net
+                        because I'm bored...
+                      </p>
+                    </div>
+                    <div class="notice-post">
+                      <a
+                        href="https://kanekos99.github.io/blog/posts/2026-09-20-Half-a-Year-of-Game-Dev/"
+                        class="notice-post-title"
+                        >0.5 Years of Game (Visual Novel) Dev what the fuck is
+                        this</a
+                      >
+                      <p>
+                        Part life update and part yapping about the visual
+                        novels I've made in the past half a year or so.
+                      </p>
+                    </div>
+                    <hr class="dotted-divider-3" />
+                    <a
+                      href="https://kanekos.neocities.org/blog/"
+                      class="notice-button"
+                      >view blog</a
+                    >
+                  </div>
+                  <div class="notice-others-box">
+                    <div class="announcement-box">
+                      <div class="notice-box announce-box">
+                        <div class="announce-header">
+                          <h4 class="announcement-title">
+                            <i
+                              class="fa fa-bullhorn me-2"
+                              aria-hidden="true"
+                            ></i
+                            >announcements
+                          </h4>
                           <div
-                            class="announce-changelog-btn-wrapper mobile-only"
+                            class="announce-changelog-btn-wrapper web-only"
                           >
                             <a
                               href="#changelog"
                               class="notice-button go-to-changelog-btn"
                             >
-                              change log
-                              <i
-                                class="fa fa-caret-down mt-1 ms-5"
-                                aria-hidden="true"
-                              ></i
+                              go to change log
+                              <i class="fa fa-caret-down" aria-hidden="true"></i
                             ></a>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="d-flex align-items-start notice-art-box notice-box"
-                      >
-                        <div
-                          class="nav flex-column nav-pills"
-                          role="tablist"
-                          aria-orientation="vertical"
-                        >
-                          <button
-                            class="nav-link active notice-art-tab"
-                            id="featured-art-tab"
-                            data-bs-toggle="pill"
-                            data-bs-target="#featured-art-panel"
-                            type="button"
-                            role="tab"
-                            aria-controls="featured-art-panel"
-                            aria-selected="true"
-                          >
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                          </button>
-                          <button
-                            class="nav-link notice-art-tab"
-                            id="latest-art-tab"
-                            data-bs-toggle="pill"
-                            data-bs-target="#latest-art-panel"
-                            type="button"
-                            role="tab"
-                            aria-controls="latest-art-panel"
-                            aria-selected="true"
-                          >
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                        <div class="tab-content notice-art-tab-content">
-                          <div
-                            class="tab-pane fade show active"
-                            id="featured-art-panel"
-                            role="tabpanel"
-                            aria-labelledby="featured-art-panel"
-                          >
-                            <div class="notice-art-heading">
-                              <h4>featured art</h4>
-                              <a
-                                href="https://kanekos.neocities.org/gallery/"
-                                class="notice-button notice-art-btn"
-                                target="_blank"
+                        <div class="announce-inner">
+                          <div class="announce-changelog">
+                            <div class="changelog-heading">
+                              latest site update<span
+                                class="announce-changelog-date"
+                                >06-10-2026</span
                               >
-                                gallery
-                                <i
-                                  class="fa fa-caret-right mt-1 ms-4"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
                             </div>
-
-                            <div
-                              class="notice-art-row"
-                              id="featured-art-gallery"
-                            ></div>
+                            <span
+                              >Very minor UI update to my blog page and added a
+                              new blog post on the basics of Ren'Py
+                            </span>
                           </div>
-                          <div
-                            class="tab-pane fade"
-                            id="latest-art-panel"
-                            role="tabpanel"
-                            aria-labelledby="latest-art-panel"
-                          >
-                            <div class="notice-art-heading">
-                              <h4>latest art</h4>
-                              <a
-                                href="https://kanekos.neocities.org/sketchlog/"
-                                class="notice-button notice-art-btn"
-                                target="_blank"
-                              >
-                                sketch log
-                                <i
-                                  class="fa fa-caret-right mt-1 ms-4"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </div>
-
-                            <div
-                              class="notice-art-row"
-                              id="latest-art-gallery"
-                            ></div>
+                          <div class="announce-changelog">
+                            <div class="changelog-heading">other news</div>
+                            <span>No other annoucements right now! </span>
                           </div>
                         </div>
+                        <div class="announce-changelog-btn-wrapper mobile-only">
+                          <a
+                            href="#changelog"
+                            class="notice-button go-to-changelog-btn"
+                          >
+                            go to change log
+                            <i class="fa fa-caret-down" aria-hidden="true"></i
+                          ></a>
+                        </div>
                       </div>
+                    </div>
+                    <div class="latest-art-box notice-box">
+                      <h4>
+                        <i
+                          class="fa fa-paint-brush me-2"
+                          aria-hidden="true"
+                        ></i>
+                        featured art
+                      </h4>
                     </div>
                   </div>
                 </div>
@@ -356,7 +240,7 @@
         </div>
 
         <!---------------Directory---------------->
-        <div class="row justify-content-center ps-3 pe-1 pb-4 directory-row">
+        <div class="row justify-content-center px-2 pb-4">
           <div class="accordion" id="directory-accordion">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -736,30 +620,6 @@
                 class="coming-soon-img"
                 src="./home/assets/coming-soon.png"
               />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="galleryModal"
-      tabindex="-1"
-      aria-labelledby="galleryModalLabel"
-    >
-      <i
-        class="fa fa-times-circle-o modal-cross"
-        aria-hidden="true"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      ></i>
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="d-flex flex-row justify-content-center modal-row">
-            <div class="modal-image-container">
-              <img src="" class="modal-image img-fluid" id="modal-image" />
             </div>
           </div>
         </div>

@@ -6,13 +6,26 @@ const toDoBox = $(toDoBox_ID);
 
 const sortabeletodo = document.getElementById("todo-list");
 
+//announcements - latest change lost
+const announcementChangeLogDate = document.getElementById(
+  "announce-changelog-date",
+);
+const announcementChangeLogText = document.getElementById(
+  "announce-changelog-text",
+);
+
+// art showcase
+const featuredArtGallery = document.getElementById("featured-art-gallery");
+const latestArtGallery = document.getElementById("latest-art-gallery");
+const modalImg = document.getElementById("modal-image");
 
 const app = {
   init: function () {
     console.log("Hello world :)");
-    console.log(images);
     loadChangelog();
     loadToDo();
+    loadAnnoucements();
+    loadArt();
   },
 };
 
@@ -56,6 +69,57 @@ function loadToDo() {
       toDoBox.append(toDoItemHTML);
     }
   });
+}
+
+function loadAnnoucements() {
+  announcementChangeLogDate.innerHTML = changelog[0].date;
+  announcementChangeLogText.innerHTML = changelog[0].status;
+}
+
+function loadArt() {
+  featuredArt.forEach((image) => {
+    const imageHTML = `
+      <div class="notice-art-thumbnail">
+        <img
+          class="notice-art-img"
+          src="${image}"
+          loading="lazy"
+          onclick="showImage(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+        />
+      </div>
+    `;
+    featuredArtGallery.insertAdjacentHTML("beforeend", imageHTML);
+  });
+
+  images.slice(0, 3).forEach((image) => {
+    const baseUrl = "https://kanekos99.github.io/sketch-gallery";
+    const imageUrl = image.replace(/^\./, baseUrl);
+
+    const imageHTML = `
+      <div class="notice-art-thumbnail">
+        <img
+          class="notice-art-img"
+          src="${imageUrl}"
+          loading="lazy"
+          onclick="showImage(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+        />
+      </div>
+    `;
+    latestArtGallery.insertAdjacentHTML("beforeend", imageHTML);
+  });
+}
+
+function showImage(image) {
+  modalImg.style.display = "none";
+  modalImg.src = image.src;
+
+  modalImg.onload = function () {
+    modalImg.style.display = "block";
+  };
 }
 
 new Sortable(sortabeletodo, {

@@ -9,12 +9,28 @@ body {
   min-height: 100svh;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-y: auto;
   color: #2b7379;
   font-family: afacad;
   font-size: 1.05rem;
   scroll-padding-top: 80px;
 }
+
+/* body {
+  width: 100%;
+  height: 100%;
+  background: white;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20205%20205%22%20width%3D%22205%22%20height%3D%22205%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20fill%3A%20none%3B%20stroke-width%3A%203px%3B%20stroke%3A%20%23FFFFFF%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22M0%2C179c51%2C0%2C51-51%2C102-51s51%2C51%2C102%2C51%22%20%2F%3E%20%3Cpath%20d%3D%22M0%2C77c51%2C0%2C51-51%2C102-51s51%2C51%2C102%2C51%22%20%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(
+      45deg,
+      rgba(237, 208, 159, 1) 0%,
+      rgba(171, 215, 216, 1) 60%
+    );
+  background-attachment: fixed;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+} */
 
 body {
   width: 100%;
@@ -31,6 +47,8 @@ body {
   background-repeat: repeat;
   background-position: 0px -2px; /* shift down by 20px */
   text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .home-text a {
@@ -51,12 +69,12 @@ body {
 }
 
 .about-box {
-  /* width: 60%; */
-  margin: 0px 0px 0px 0px;
+  width: 60%;
+  margin: 0px 0px 0px 25px;
 }
 
 .img-box {
-  /* width: 35%; */
+  width: 35%;
   padding-right: 5%;
 }
 
@@ -76,7 +94,7 @@ body {
 .site-heading {
   font-family: "Dosis", sans-serif;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.188rem;
   align-content: center;
   background-color: #2b7379 !important;
   color: white !important;
@@ -92,9 +110,8 @@ body {
 
 .home-text {
   text-align: justify;
-  line-height: 1.2;
+  line-height: 1.3;
   color: #2b7379;
-  margin-bottom: 0px;
 }
 
 .home-image {
@@ -112,7 +129,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  width: 75%;
+  width: 55%;
   background-color: #67a9a9;
   border-radius: 0px 0px 10px 10px;
   font-family: "Dosis", sans-serif;
@@ -136,21 +153,9 @@ body {
   color: white;
 }
 
-.about-wrapper {
-  display: block;
-}
-
-.landing-wrapper {
-  display: grid;
-  grid-template-areas: "about-wrapper notice-board-wrapper";
-  grid-template-columns: 1fr 3fr;
-  gap: 30px;
-}
-
 .home-image-wrapper {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .home-body {
@@ -191,12 +196,8 @@ a:hover {
   text-decoration: none;
 }
 
-.about-page {
-  max-width: 900px;
-}
-
 .home-page {
-  max-width: 1250px;
+  max-width: 900px;
 }
 
 .home-container {
@@ -475,12 +476,11 @@ label.form-check-label:focus,
 .noticeboard-body {
   /* background-color: #d6eef3; */
   display: grid;
-  grid-template-areas: "notice-others-box latest-posts-box";
-  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "latest-posts-box notice-others-box";
+  grid-template-columns: 1fr 2fr;
   gap: 5px;
   padding: 5px 7px;
   background-image: url("../assets/board.png");
-  border-radius: 0px 0px 10px 10px;
 }
 
 .latest-posts-box {
@@ -518,67 +518,37 @@ label.form-check-label:focus,
 }
 
 .notice-post {
-  padding: 10px 10px;
+  padding: 10px 12px;
   background-color: #d6eef3;
   border-radius: 10px;
   /* border: 3px dotted #2b737933; */
   margin-bottom: 10px;
 }
 
-.notice-post-heading {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-  color: #2b7379;
-}
-
-.notice-post-date {
-  color: #2b7379;
-  text-align: center;
-  font-size: 0.8rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 0px 5px;
-  border-radius: 5px;
-  margin-right: 3px;
-  text-align: right;
-  font-style: italic;
-  opacity: 0.8;
-}
-
 .notice-post p {
   font-size: 0.9rem;
-  /* margin-left: 15px; */
+  margin-left: 15px;
   margin-bottom: 0px;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
+  opacity: 0.9;
   color: #2b7379;
-  text-align: left;
+  text-align: justify;
   display: -webkit-box;
-  line-height: 1.2;
   -webkit-box-orient: vertical;
-  text-align: left;
-}
-
-.notice-post p i {
-  font-size: 0.8rem;
-  color: #67a9a9;
-}
-
-.notice-post p span {
-  opacity: 0.8;
 }
 
 .notice-post-title {
-  display: inline;
-  white-space: wrap;
+  display: block;
+  margin-bottom: 5px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 162px;
+  max-width: 250px;
   font-size: 1rem;
   font-weight: 900;
   color: #2b7379;
-  text-align: right;
 }
 
 .notice-post-title:hover {
@@ -598,7 +568,7 @@ label.form-check-label:focus,
   font-weight: 900;
   font-family: "Dosis";
   border-radius: 10px;
-  padding: 9px 15px;
+  padding: 6px 30px;
   display: inline-block;
 }
 
@@ -609,88 +579,8 @@ label.form-check-label:focus,
   transition: ease-in-out 0.2s;
 }
 
-.notice-art-box {
-  background-color: transparent;
-  box-shadow: none;
-  padding: 0px;
-}
-
-.notice-art-tab-content {
-  background-color: white;
-  box-shadow: 2px 2px #2b737975;
-  width: 100%;
-  border-radius: 10px 10px 10px 10px;
-  padding: 5px 10px 10px 10px;
-}
-
-.notice-art-tab-content h4 {
-  padding-bottom: 0px;
-}
-
-.notice-art-tab {
-  background-color: #67a9a9;
-  color: white;
-  border-radius: 10px 0px 0px 10px !important;
-  padding: 5px 8px;
-  margin-top: 10px;
-  font-size: 1.2rem;
-  box-shadow: 2px 2px #2b737975;
-}
-
-.notice-art-tab:not(.active):hover {
-  color: white;
-  background-color: #4b8181;
-}
-
-.notice-art-tab.active {
-  background-color: #4b8181 !important;
-  outline: rgb(255, 255, 255) 3px solid !important;
-}
-
-.notice-art-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.notice-art-thumbnail {
-  display: block;
-  flex: 1 1 5rem;
-  aspect-ratio: 1;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 5px;
-  background-color: #d6eef3;
-  box-shadow: 2px 2px #2b737975;
-}
-
-.notice-art-thumbnail:hover {
-  transform: scale(1.1) rotate(-10deg);
-  transition: ease-in-out(0.2s);
-}
-
-.notice-art-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-  object-position: 25% 12%;
-}
-
-.notice-art-btn {
-  padding: 3px 12px 5px 12px;
-  font-size: 0.8rem;
-  border-radius: 25px;
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-
-.notice-art-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.latest-art-box {
+  margin-top: 0px;
 }
 
 .announce-box {
@@ -715,7 +605,6 @@ label.form-check-label:focus,
   text-align: center;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
   display: flex;
   gap: 6px;
 }
@@ -726,36 +615,14 @@ label.form-check-label:focus,
   border-radius: 10px;
   flex: 1;
   box-shadow: 2px 2px #2b737975;
-  min-height: 100px;
 }
 
 .announce-changelog span {
-  font-size: 1rem;
-  margin: 0px;
+  font-size: 0.9rem;
+  margin: 2px 0px;
   text-align: justify;
   line-height: 1.1;
   display: inline-block;
-  /* -webkit-line-clamp: 3;
-  line-clamp: 3;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  display: -webkit-box; */
-}
-
-.announce-changelog-box {
-  overflow-y: auto;
-  height: 57px;
-  padding-right: 5px;
-}
-
-.announce-changelog span a {
-  font-weight: bold;
-  color: #2b7379;
-  cursor: pointer;
-}
-
-.announce-changelog span a:hover {
-  text-decoration: 3px solid #2b737976 underline;
 }
 
 .announce-changelog-date {
@@ -795,10 +662,17 @@ label.form-check-label:focus,
 }
 
 .go-to-changelog-btn {
-  padding: 3px 12px 5px 12px;
+  padding: 3px 15px;
   font-size: 0.8rem;
   border-radius: 25px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 150px;
+}
+
+.go-to-changelog-btn .fa-caret-down {
+  margin-top: 1px;
 }
 
 .mobile-only {
@@ -813,8 +687,8 @@ label.form-check-label:focus,
   position: absolute;
   background: #ffffff;
   border-radius: 0.4em;
-  left: 55%;
-  top: 0%;
+  left: 27%;
+  top: 10%;
   padding: 15px;
   z-index: 10;
   transition: opacity 0.3s ease;
@@ -867,8 +741,6 @@ label.form-check-label:focus,
 /* Track */
 ::-webkit-scrollbar-track {
   background: #d6dcdc;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 /* Handle */
@@ -906,53 +778,11 @@ label.form-check-label:focus,
   padding-right: 2px;
 }
 
-/* Track */
-.home-text-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-.home-text-container::-webkit-scrollbar-thumb {
-  border-radius: 25px;
-}
-
-.home-text-container::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-.announce-changelog-box::-webkit-scrollbar-track {
-  background: transparent;
-  margin-top: 5px;
-}
-
-/* Handle */
-.announce-changelog-box::-webkit-scrollbar-thumb {
-  border-radius: 25px;
-}
-
-.announce-changelog-box::-webkit-scrollbar {
-  width: 7px;
-}
-
 /*---------------------------- responsiveness -----------------------------*/
 
-@media only screen and (max-width: 1215px) {
+@media only screen and (max-width: 898px) {
   .home-page {
     padding: 0px 20px;
-    max-width: 700px;
-  }
-
-  .about-page {
-    max-width: 900px;
-  }
-
-  .landing-wrapper {
-    display: block;
-  }
-
-  .notice-board-wrapper {
-    margin-top: 20px;
   }
 
   .img-box {
@@ -983,10 +813,6 @@ label.form-check-label:focus,
 
   .site-heading {
     font-size: 30px;
-  }
-
-  .directory-row {
-    padding: 0rem 0.5rem 1.5rem 0.5rem !important;
   }
 
   .directory-img-box {
@@ -1044,7 +870,7 @@ label.form-check-label:focus,
   .speech-bubble {
     position: absolute;
     left: 35%;
-    top: -5%;
+    top: 5%;
   }
 
   /*---------------------------- Noticeboard -----------------------------*/
@@ -1067,18 +893,8 @@ label.form-check-label:focus,
     margin: 0px 0px;
     margin-bottom: 10px;
   }
-
-  .notice-art-box {
-    margin-bottom: 12px;
-  }
-
-  .notice-art-thumbnail {
-    flex: 1 1 10rem;
-    max-height: 9rem;
-  }
-
-  .notice-art-img {
-    object-position: 50% 25%;
+  .latest-art-box {
+    margin-bottom: 5px;
   }
 
   .announcement-box {
@@ -1100,14 +916,6 @@ label.form-check-label:focus,
 
   .announce-changelog-btn-wrapper.web-only {
     display: none;
-  }
-
-  .notice-post {
-    padding: 10px 10px;
-  }
-
-  .notice-post-title {
-    max-width: 220px;
   }
 }
 

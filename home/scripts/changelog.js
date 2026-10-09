@@ -187,3 +187,9 @@ const todo = [
     status: "completed",
   },
 ];
+
+const featuredArt = [
+  "https://kanekos99.github.io/gallery/assets/artwork/original/illustrations/Az_card_front_v3.png",
+  "https://kanekos99.github.io/gallery/assets/artwork/original/illustrations/Tarot_Colour.png",
+  "https://kanekos99.github.io/gallery/assets/artwork/original/illustrations/vampire_vn.png",
+];
