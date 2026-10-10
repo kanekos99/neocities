@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Welcome to my new home page! Featuring a new noticeboard section to share the latest site updates, and a more compact directory section. The old home page will be added at a later date to an archive page.`,
+    date: "10/10/2026",
+  },
+  {
     status: `Very minor UI update to my <a href="https://kanekos.neocities.org/blog/">blog page</a> and added a <a href="https://kanekos.neocities.org/blog/posts/2026-10-06-Basic-Renpy-Tutorial/">new blog post</a> on the basics of Ren'Py`,
     date: "06/10/2026",
   },
@@ -119,15 +123,11 @@ const todo = [
     status: "",
   },
   {
-    label: "Add noticeboard to home page",
-    status: "",
-  },
-  {
-    label: "Adjust home page directory UI",
-    status: "",
-  },
-  {
     label: "Make some kind of links/ webring page",
+    status: "",
+  },
+  {
+    label: "Create archive page",
     status: "",
   },
   {
@@ -137,6 +137,14 @@ const todo = [
   {
     label: "Add chat box - Chattable",
     status: "",
+  },
+  {
+    label: "Add noticeboard to home page",
+    status: "completed",
+  },
+  {
+    label: "Adjust home page directory UI",
+    status: "completed",
   },
   {
     label: "Adjust blog UI",

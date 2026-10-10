@@ -37,8 +37,8 @@ function loadChangelog() {
   changelog.forEach((log, index) => {
     let statusLogHTML = `
       <p class="home-text update-text">
-        <b>${log.date}</b>
-        <br><br>
+        <span class="update-text-date">${log.date}</span>
+        <i class="fa fa-angle-double-right me-1" aria-hidden="true"></i>
         ${log.status}
       </p>
     `;
@@ -126,8 +126,7 @@ function showImage(image) {
 
 function loadBlogPosts() {
   blog_posts.slice(0, 3).forEach((post) => {
-
-    const postDate = post.date.split("T")[0]
+    const postDate = post.date.split("T")[0];
 
     const postHTML = `
       <div class="notice-post">

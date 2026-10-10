@@ -418,7 +418,20 @@ a:hover {
 }
 
 .update-text {
-  text-align: center;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.update-text i {
+  opacity: 0.5;
+}
+
+.update-text-date {
+  font-weight: 900;
+  background-color: #d6eef3;
+  padding: 1px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
 }
 
 .todo-accordion-body {
