@@ -270,38 +270,66 @@ a:hover {
 .directory-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
-.directory-item-box {
-  flex: 1 1 20rem;
+/* .directory-item-box {
+  flex: 1 1 30rem;
   background-color: white;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: end;
   box-shadow: 2px 2px #2b73793c;
-  padding: 1.5rem;
-  flex-direction: column;
+  padding: 1rem 1rem 1rem 1rem;
+  gap: 15px;
+} */
+
+.directory-item-box {
+  flex: 1 1 30rem;
+  display: grid;
+  grid-template-areas: "directory-img-box directory-text-box";
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 2px 2px #2b73793c;
+  padding: 1rem 1rem 1rem 1rem;
+  gap: 15px;
+}
+
+.directory-img-box {
+  display: flex;
+  width: 15rem;
+  height: 12rem;
+  border: 5px solid #67a9a92d;
+  border-radius: 15px;
+  overflow: hidden;
+  grid-area: directory-img-box;
+  justify-content: end;
 }
 
 .directory-img {
   width: 100%;
-  border-radius: 25px;
+  height: 100%;
+  border-radius: 10px;
   cursor: pointer;
-  border: 5px solid #67a9a92d;
+  object-fit: cover;
 }
 
-.directory-img:hover {
+.directory-img-box:hover {
   border: 5px solid #67a9a9;
   transition: border 0.2s ease-in-out;
 }
 
 .directory-text-box {
-  justify-content: left;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
   text-align: center;
   padding: 0px 10px 0px 10px;
-  margin-top: 20px;
+  grid-area: directory-text-box;
 }
 
 .directory-text-heading {
@@ -310,17 +338,20 @@ a:hover {
   font-weight: 700;
   font-size: 24px;
   padding-left: 0px;
+  margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-align: right;
 }
 
 .directory-text-wrapper {
-  min-height: 200px;
+  /* min-height: 300px; */
   display: flex;
   align-items: center;
-  background-color: #d6eef389 !important;
-  padding: 10px 20px 10px 20px;
+  /* background-color: #d6eef389 !important; */
+  padding: 0px 15px 10px 15px;
   border-radius: 10px;
-  border: 3px dotted #afdce07f;
+  /* border: 3px dotted #afdce07f; */
 }
 
 .directory-text {
@@ -344,7 +375,8 @@ a:hover {
 .visit-btn-wrapper {
   display: flex;
   justify-content: end;
-  margin-top: 20px;
+  padding: 0px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -1023,6 +1055,12 @@ label.form-check-label:focus,
     padding: 0rem 0.5rem 1.5rem 0.5rem !important;
   }
 
+  .directory-item-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
   .directory-img-box {
     width: 100%;
     margin-top: 0px;
@@ -1147,6 +1185,10 @@ label.form-check-label:focus,
   .notice-post-title {
     max-width: 220px;
   }
+
+  .white-space {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1159,7 +1201,7 @@ label.form-check-label:focus,
   }
 
   .directory-item-box {
-    padding: 1.5rem 1.1rem 1rem 1.1rem;
+    padding: 1.5rem 1.1rem 0.8rem 1.1rem;
   }
 
   .directory-text-heading {
