@@ -39,15 +39,15 @@ body {
 }
 
 .update-box {
-  width: 30.5%;
+  grid-area: update-box;
 }
 
 .todo-box {
-  width: 30.5%;
+  grid-area: todo-box;
 }
 
 .links-box {
-  width: 30.5%;
+  grid-area: links-box;
 }
 
 .about-box {
@@ -399,7 +399,11 @@ a:hover {
 }
 
 .update-row {
-  padding: 0px;
+  display: grid;
+  grid-template-areas: "links-box update-box todo-box";
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 0rem 0rem 0rem 1rem;
 }
 
 .update-text-container {
@@ -410,6 +414,7 @@ a:hover {
 .update-accordion-body {
   padding: 0px 0px 0px 0px;
   height: 428px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .update-text {
@@ -489,7 +494,7 @@ label.form-check-label:focus,
 }
 
 .coming-soon-img {
-  width: 60%;
+  width: 50%;
 }
 
 .link-btn-container {
@@ -1085,6 +1090,11 @@ label.form-check-label:focus,
     margin-top: 10px;
   }
 
+  .update-row {
+    display: block;
+    padding: 0rem 0.5rem;
+  }
+
   .update-box {
     width: 100%;
     margin: 20px 0px !important;
@@ -1092,12 +1102,11 @@ label.form-check-label:focus,
 
   .todo-box {
     width: 100%;
-    margin: 20px 0px !important;
+    margin: 25px 0px !important;
   }
 
   .links-box {
     width: 100%;
-    margin: 20px 0px !important;
   }
 
   .checkbox-col {
