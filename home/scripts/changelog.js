@@ -1,6 +1,6 @@
 const changelog = [
   {
-    status: `Welcome to my new home page! Featuring a new noticeboard section to share the latest site updates, and a more compact directory section. Please clear cache or hard refresh if it looks messed up to you ><`,
+    status: `Welcome to my new home page! Featuring a new noticeboard section to share the latest site updates, and a more compact directory section. Please clear cache or hard refresh if it looks messed up to you!`,
     date: "10/10/2026",
   },
   {

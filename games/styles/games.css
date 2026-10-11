@@ -1,0 +1,233 @@
+.games-page {
+  max-width: 950px;
+  margin: auto;
+}
+
+.games-page-header {
+  display: flex;
+  justify-content: start;
+}
+
+.games-page-title {
+  width: 20rem;
+  filter: drop-shadow(0 0 0.2rem #618b8bd3);
+}
+
+.games-page-top-row {
+  display: grid;
+  grid-template-areas: "games-home-button games-page-about";
+  grid-template-columns: 1fr 7fr;
+  justify-content: start;
+  padding: 10px 0px 0px 0px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+
+.games-home-button {
+  background-color: rgba(237, 208, 159, 1);
+  color: rgb(127, 101, 68);
+  box-shadow: 2px 2px rgba(127, 101, 68, 0.3);
+  padding: 7px 20px 7px 20px;
+  border-radius: 10px;
+  grid-area: games-home-button;
+}
+
+.games-home-button:hover {
+  background-color: rgb(206, 174, 117);
+  color: rgb(94, 73, 46);
+  box-shadow: 2px 2px rgba(105, 83, 54, 0.3);
+  transition: ease-in-out 0.2s;
+}
+
+.games-page-about {
+  background-color: #d6eef3;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 1.2;
+  grid-area: games-page-about;
+}
+
+.game-box {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: "game-img-thumbnail game-info-box";
+  grid-template-columns: 1fr 5fr;
+  box-shadow: 2px 2px #2b737975;
+  gap: 10px;
+  margin-top: 20px;
+  border: 3px solid #d6eef3;
+}
+
+.game-img {
+  width: 17rem;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.game-info-box {
+  padding: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.game-title {
+  background-color: #d6eef3;
+  font-family: "Dosis";
+  font-weight: 900;
+  padding: 5px 20px 5px 20px;
+  width: 100%;
+  text-align: left;
+  border-radius: 25px;
+}
+
+.game-description {
+  text-align: justify;
+  line-height: 1.2;
+  padding: 5px 10px 5px 10px;
+  font-size: 1rem;
+}
+
+.game-release-date-box {
+  text-align: left;
+  opacity: 0.7;
+  font-size: 0.95rem;
+  padding: 0px 10px;
+  margin-top: 5px;
+}
+
+.game-tags-box {
+  text-align: left;
+  padding: 0px 10px;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.game-tags-label {
+  opacity: 0.7;
+}
+
+.game-tag {
+  background-color: #d6eef3;
+  border: 2px solid #67a9a980;
+  border-radius: 25px;
+  padding: 0px 10px;
+  opacity: 0.8;
+  margin: 0px 1px;
+  font-size: 0.9rem;
+}
+
+.game-buttons-row {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.game-link-button {
+  background-color: rgba(237, 208, 159, 1);
+  color: rgb(127, 101, 68);
+  box-shadow: 2px 2px rgba(127, 101, 68, 0.3);
+  border-radius: 5px;
+  border: none;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  padding: 2px 30px 2px 30px;
+  margin-left: 5px;
+}
+
+.game-link-button:hover {
+  background-color: rgb(206, 174, 117);
+  color: rgb(94, 73, 46);
+  box-shadow: 2px 2px rgba(105, 83, 54, 0.3);
+  transition: ease-in-out 0.2s;
+}
+
+.view-game-page-btn {
+  background-color: #67a9a9;
+  color: white;
+  box-shadow: 2px 2px #2b737975;
+}
+
+.view-game-page-btn:hover {
+  background-color: #4b8181;
+  color: white;
+  transition: ease-in-out 0.2s;
+  box-shadow: 2px 2px #2b7379a3;
+}
+
+/*---------------------------- responsiveness -----------------------------*/
+
+@media only screen and (max-width: 1100px) {
+
+  .games-page-header {
+    justify-content: end;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  .games-page-top-row {
+    padding: 0px 10px;
+  }
+  .games-container {
+    padding: 0px 10px;
+  }
+
+  .game-img {
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  
+  .games-page-title {
+    width: 15rem;
+  }
+
+  .game-box {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .games-page-top-row {
+    display: block;
+  }
+
+  .games-home-button {
+    display: none;
+  }
+
+  .games-page-about {
+    /* width: 100%; */
+    padding: 5px 10px 5px 10px;
+  }
+
+  .games-page {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .game-img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .game-info-box {
+    padding: 10px;
+  }
+
+  .game-tags-box {
+    line-height: 1.6;
+  }
+
+  .game-link-button {
+    width: 50%;
+  }
+}
