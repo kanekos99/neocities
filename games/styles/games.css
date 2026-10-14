@@ -65,7 +65,7 @@
 
 .game-img {
   width: 17rem;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 7px 0px 0px 7px;
 }
 
 .game-info-box {
@@ -186,7 +186,7 @@
 }
 
 @media only screen and (max-width: 850px) {
-  
+
   .games-page-title {
     width: 15rem;
   }
@@ -216,7 +216,7 @@
 
   .game-img {
     width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
   }
 
   .game-info-box {
@@ -224,10 +224,14 @@
   }
 
   .game-tags-box {
-    line-height: 1.6;
+    line-height: 1.8;
   }
 
   .game-link-button {
     width: 50%;
+  }
+
+  .game-white-space {
+    display: none;
   }
 }

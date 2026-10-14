@@ -43,7 +43,7 @@
       </div>
 
       <div class="container home-page mt-4">
-        <!---------------About Page---------------->
+        <!---------------About Section---------------->
         <div class="pt-3 pb-4 landing-wrapper">
           <div class="d-flex flex-wrap justify-content-center about-wrapper">
             <div class="home-image-wrapper">
@@ -352,36 +352,34 @@
                       </div>
                     </div>
                     <div class="directory-item-box">
-                      <a href="dressup" class="directory-img-box">
+                      <a href="games" class="directory-img-box">
                         <img
-                          src="./home/assets/dressup.png"
+                          src="./home/assets/games.png"
                           class="directory-img"
                         />
                       </a>
                       <div class="directory-text-box row align-items-center">
-                        <h2 class="directory-text-heading">
-                          Qiu Ye Dress Up Game
-                        </h2>
+                        <h2 class="directory-text-heading">My Games</h2>
                         <div class="directory-text-wrapper">
                           <p class="directory-text home-text">
-                            This is a silly little dress up game featuring my
-                            original character, Qiu Ye. All art assets are drawn
-                            by me.
+                            A page that compiles all the games I have made as a
+                            solo dev. Most of them are visual novels made for
+                            game jams, as well as a dress up game.
                             <br /><br />
-                            <i><b>Warning:</b> Page has moderate image load.</i>
                           </p>
                         </div>
                         <div class="visit-btn-wrapper">
-                          <a class="visit-btn ml-3 py-1" href="dressup"
-                            >Visit</a
-                          >
+                          <a class="visit-btn ml-3 py-1" href="games">Visit</a>
                         </div>
                       </div>
                     </div>
                     <div class="directory-item-box">
-                      <a href="vampire-vn" class="directory-img-box">
+                      <a
+                        href="https://kanekos.neocities.org/sketchlog/"
+                        class="directory-img-box"
+                      >
                         <img
-                          src="home/assets/vampire-vn.png"
+                          src="home/assets/sketchlog.png"
                           class="directory-img"
                         />
                       </a>
@@ -389,22 +387,21 @@
                         <h2
                           class="directory-text-heading directory-text-heading-small"
                         >
-                          How (Not) To Kill a Vampire Lord
+                          Sketch Log
                         </h2>
                         <div class="directory-text-wrapper">
                           <p class="directory-text home-text">
-                            A vampire-themed BL visual novel I made for a
-                            <a
-                              href="https://kanekos99.itch.io/how-not-to-kill-a-vampire-lord"
-                              >game jam</a
-                            >
-                            on itch.io. Featuring my original characters, with
-                            all art drawn by me. <br /><br />
+                            A page for me to dump any and every drawing and
+                            sketch that I've made since I am Very Bad when it
+                            comes to updating my actual social media.
+                            <br /><br />
                             <i><b>Warning:</b> Page has high image load.</i>
                           </p>
                         </div>
                         <div class="visit-btn-wrapper">
-                          <a class="visit-btn ml-3 py-1" href="vampire-vn"
+                          <a
+                            class="visit-btn ml-3 py-1"
+                            href="https://kanekos.neocities.org/sketchlog/n"
                             >Visit</a
                           >
                         </div>
@@ -448,9 +445,9 @@
                         <h2 class="directory-text-heading">Blog</h2>
                         <div class="directory-text-wrapper">
                           <p class="directory-text home-text">
-                            A blog built with Eleventy for me to act as a space
-                            for me to write stuff on this website. Might post
-                            personal updates, project updates or maybe even some
+                            A blog built with Eleventy to act as a space for me
+                            to write stuff on this website. Might post personal
+                            updates, project updates or maybe even some
                             resources.
                           </p>
                         </div>
@@ -501,7 +498,7 @@
         </div>
 
         <!---------------Updates and Links---------------->
-        <div class="row justify-content-center pb-4">
+        <div class="row justify-content-center">
           <div class="update-row">
             <div class="accordion links-box mb-4" id="links-accordion">
               <div class="accordion-item">
@@ -675,8 +672,195 @@
           </div>
         </div>
 
+        <!---------------Neighbourhood---------------->
+        <div class="row justify-content-center neighbourhood-row">
+          <div
+            class="accordion neighbourhood-box mb-2"
+            id="neighbourhood-accordion"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#neighbourhood-box"
+                  aria-expanded="true"
+                  aria-controls="neighbourhood-box"
+                >
+                  <i class="fa fa-building home-icon" aria-hidden="true"></i>
+                  Neighbourhood
+                </button>
+              </h2>
+              <div
+                id="neighbourhood-box"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+              >
+                <div class="accordion-body neighbourhood-accordion-body shadow">
+                  <div
+                    class="nav flex-column nav-pills neighbourhood-nav"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <button
+                      class="nav-link active neighbours-tab"
+                      id="neighbours-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#neighbours-panel"
+                      type="button"
+                      role="tab"
+                      aria-controls="neighbours-panel"
+                      aria-selected="true"
+                    >
+                      cool sites
+                    </button>
+                    <button
+                      class="nav-link webrings-tab"
+                      id="webrings-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#webrings-panel"
+                      type="button"
+                      role="tab"
+                      aria-controls="webrings-panel"
+                      aria-selected="true"
+                    >
+                      webrings
+                    </button>
+                  </div>
+                  <div class="tab-content neighbourhood-tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="neighbours-panel"
+                      role="tabpanel"
+                      aria-labelledby="neighbours-panel"
+                    >
+                      <div class="cool-sites-wrapper">
+                        <div class="cool-sites-header"><h5>neighbours</h5></div>
+                        <div class="cool-sites-row">
+                          <a href="https://blueazul.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/blueazul.png"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://mushyooms.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/mushyoomslink.gif"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://falsedawn.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/falsedawn.webp"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://franengard.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/franengard.png"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://loandbihold.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/loandbihold.png"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://lunari.anbimichi.moe/"
+                            ><img
+                              src="./home/assets/neighbourhood/anbimichi.gif"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://pii.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/pii.png"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                        <div class="neighbours-text">
+                          If you've added my button to your site, let me know
+                          and I'll add yours!
+                        </div>
+                      </div>
+                      <div class="cool-sites-wrapper">
+                        <div class="cool-sites-header">
+                          <h5>other cool sites</h5>
+                        </div>
+                        <div class="cool-sites-row">
+                          <a href="https://petrapixel.neocities.org/indiewebdb/"
+                            ><img
+                              src="./home/assets/neighbourhood/indiewebdb.png"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://petrapixel.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/petrapixel.webp"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://temstuff.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/temstuff.gif"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://nomnomnami.com/"
+                            ><img
+                              src="./home/assets/neighbourhood/nomnomnami.gif"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://stupied.net/"
+                            ><img
+                              src="./home/assets/neighbourhood/stupied.png"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://tofutush.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/tofutush.gif"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://numbersstory.com/"
+                            ><img
+                              src="./home/assets/neighbourhood/numbersstory.png"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://lilithdev.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/lilithdevbtn.gif"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://lazer-bunny.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/lazer-bunny.gif"
+                              loading="lazy"
+                          /></a>
+                          <a href="https://nenrikido.neocities.org/"
+                            ><img
+                              src="./home/assets/neighbourhood/nenrikido_button.gif"
+                              loading="lazy"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="webrings-panel"
+                      role="tabpanel"
+                      aria-labelledby="webrings-panel"
+                    >
+                      <div class="web-rings-wrapper">
+                        <div class="web-ring-box">
+                          <img
+                            class="web-ring-img"
+                            src="./home/assets/coming-soon.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!---------------Others---------------->
-        <div class="row justify-content-center px-2 pb-5">
+        <!-- <div class="row justify-content-center px-2 pb-5">
           <div class="d-flex flex-wrap justify-content-center update-row">
             <div class="others-box ms-3">
               <img
@@ -685,7 +869,7 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -720,7 +904,7 @@
       }
     </script>
     <script src="common/scripts/sidemenu.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/kanekos99/neocities@main/home/scripts/changelog.js"></script>
+    <script src="home/scripts/changelog.js"></script>
     <script src="https://kanekos99.github.io/sketch-gallery/scripts/images.js"></script>
     <script src="https://kanekos.neocities.org/blog/blog-posts-summary.js"></script>
     <script src="home/scripts/main.js"></script>

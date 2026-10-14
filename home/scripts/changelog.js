@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Added a new <a href="https://kanekos.neocities.org/games/">games</a> page to compile all the games I've made, and added a new neighbourhood section to the homepage (again please clear cache if it looks weird to you ;w;)`,
+    date: "11/10/2026",
+  },
+  {
     status: `Welcome to my new home page! Featuring a new noticeboard section to share the latest site updates, and a more compact directory section. Please clear cache or hard refresh if it looks messed up to you!`,
     date: "10/10/2026",
   },
@@ -115,7 +119,11 @@ const todo = [
     status: "",
   },
   {
-    label: "Make new game page",
+    label: "OC page",
+    status: "",
+  },
+  {
+    label: "Apply to some webrings",
     status: "",
   },
   {
@@ -123,20 +131,16 @@ const todo = [
     status: "",
   },
   {
-    label: "Make some kind of links/ webring page",
-    status: "",
-  },
-  {
     label: "Create archive page",
     status: "",
   },
   {
-    label: "OC page",
-    status: "",
+    label: "Make some kind of links/ webring page",
+    status: "completed",
   },
   {
-    label: "Add chat box - Chattable",
-    status: "",
+    label: "Make new game page",
+    status: "completed",
   },
   {
     label: "Add noticeboard to home page",
