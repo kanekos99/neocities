@@ -1,5 +1,9 @@
 const changelog = [
   {
+    status: `Minor UI fix for <a href="https://kanekos.neocities.org/sketchlog/">sketch log</a> page`,
+    date: "20/10/2026",
+  },
+  {
     status: `Added a new <a href="https://kanekos.neocities.org/games/">games</a> page to compile all the games I've made, and added a new neighbourhood section to the homepage (again please clear cache if it looks weird to you ;w;)`,
     date: "11/10/2026",
   },
