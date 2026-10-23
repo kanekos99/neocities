@@ -1,6 +1,10 @@
 const changelog = [
   {
-    status: `Minor UI fix for <a href="https://kanekos.neocities.org/sketchlog/">sketch log</a> page`,
+    status: `Added <a href="https://kanekos.neocities.org/oc-gallery/">OC gallery</a> to the home page directory`,
+    date: "23/10/2026",
+  },
+  {
+    status: `Launched <a href="https://kanekos.neocities.org/oc-gallery/">OC gallery page</a>!! (Although it will probably remain as a WIP for a looong time). Also added minor UI fix for <a href="https://kanekos.neocities.org/sketchlog/">sketch log</a> page`,
     date: "20/10/2026",
   },
   {
@@ -123,10 +127,6 @@ const todo = [
     status: "",
   },
   {
-    label: "OC page",
-    status: "",
-  },
-  {
     label: "Apply to some webrings",
     status: "",
   },
@@ -139,7 +139,19 @@ const todo = [
     status: "",
   },
   {
+    label: "Add a last updated feature to OC Gallery",
+    status: "",
+  },
+  {
+    label: "Add more OCs to OC Gallery",
+    status: "",
+  },
+  {
     label: "Make some kind of links/ webring page",
+    status: "completed",
+  },
+  {
+    label: "OC page",
     status: "completed",
   },
   {
@@ -203,6 +215,8 @@ const todo = [
     status: "completed",
   },
 ];
+
+const otherNews = [];
 
 const featuredArt = [
   "https://kanekos99.github.io/gallery/assets/artwork/original/illustrations/Az_card_front_v3.png",

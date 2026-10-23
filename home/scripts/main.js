@@ -6,13 +6,17 @@ const toDoBox = $(toDoBox_ID);
 
 const sortabeletodo = document.getElementById("todo-list");
 
-//announcements - latest change lost
+//announcements - latest change logs
 const announcementChangeLogDate = document.getElementById(
   "announce-changelog-date",
 );
 const announcementChangeLogText = document.getElementById(
   "announce-changelog-text",
 );
+
+//announcements - other announcements
+const announcementOthersDate = document.getElementById("announce-other-date");
+const announcementOthersText = document.getElementById("announce-other-text");
 
 // art showcase
 const featuredArtGallery = document.getElementById("featured-art-gallery");
@@ -26,6 +30,7 @@ const app = {
     loadChangelog();
     loadToDo();
     loadAnnoucements();
+    loadOtherNews();
     loadArt();
     loadBlogPosts();
   },
@@ -76,6 +81,15 @@ function loadToDo() {
 function loadAnnoucements() {
   announcementChangeLogDate.innerHTML = changelog[0].date;
   announcementChangeLogText.innerHTML = changelog[0].status;
+}
+
+function loadOtherNews() {
+  if (otherNews[0]) {
+    announcementOthersDate.innerHTML = otherNews[0].date;
+    announcementOthersText.innerHTML = otherNews[0].status;
+  } else {
+    announcementOthersText.innerHTML = "No other anncouncemnts right now!";
+  }
 }
 
 function loadArt() {

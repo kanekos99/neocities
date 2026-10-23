@@ -12,6 +12,9 @@ const sideMenuHTML = `
       <a class="side-menu-button" href="https://kanekos.neocities.org/games/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>My Games</a
       >
+      <a class="side-menu-button" href="https://kanekos.neocities.org/oc-gallery/"
+        ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Characters</a
+      >
       <a class="side-menu-button" href="https://kanekos.neocities.org/phainon-shrine/"
         ><i class="fa fa-paw paw-icon" aria-hidden="true"></i>Shrine(s)</a
       >

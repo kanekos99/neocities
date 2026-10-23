@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="home/styles/main.css" />
     <link rel="stylesheet" type="text/css" href="home/styles/modal.css" />
+    <link rel="stylesheet" type="text/css" href="home/styles/webrings.css" />
     <link rel="stylesheet" type="text/css" href="common/styles/sidemenu.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -182,12 +183,20 @@
                                 ></span>
                               </div>
                               <div class="announce-changelog-box">
-                                <span id="announce-changelog-text"> </span>
+                                <span id="announce-changelog-text"></span>
                               </div>
                             </div>
                             <div class="announce-changelog">
-                              <div class="changelog-heading">other news</div>
-                              <span>No other annoucements right now! </span>
+                              <div class="changelog-heading">
+                                other news
+                                <span
+                                  class="announce-changelog-date"
+                                  id="announce-other-date"
+                                ></span>
+                              </div>
+                              <div class="announce-changelog-box">
+                                <span id="announce-other-text"></span>
+                              </div>
                             </div>
                           </div>
                           <div
@@ -401,7 +410,42 @@
                         <div class="visit-btn-wrapper">
                           <a
                             class="visit-btn ml-3 py-1"
-                            href="https://kanekos.neocities.org/sketchlog/n"
+                            href="https://kanekos.neocities.org/sketchlog/"
+                            >Visit</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="directory-item-box">
+                      <a
+                        href="https://kanekos.neocities.org/oc-gallery/"
+                        class="directory-img-box"
+                      >
+                        <img
+                          src="home/assets/oc-gallery-preview.png"
+                          class="directory-img"
+                        />
+                      </a>
+                      <div class="directory-text-box row align-items-center">
+                        <h2
+                          class="directory-text-heading directory-text-heading-small"
+                        >
+                          OC Gallery
+                        </h2>
+                        <div class="directory-text-wrapper">
+                          <p class="directory-text home-text">
+                            A compilation of my original characters across
+                            different stories and worlds. Forever a WIP as I add
+                            more characters and new features. Please note
+                            individual character profile warnings.
+                            <br /><br />
+                            <i><b>Warning:</b> Page has high image load.</i>
+                          </p>
+                        </div>
+                        <div class="visit-btn-wrapper">
+                          <a
+                            class="visit-btn ml-3 py-1"
+                            href="https://kanekos.neocities.org/oc-gallery/"
                             >Visit</a
                           >
                         </div>
@@ -489,6 +533,12 @@
                           >
                         </div>
                       </div>
+                    </div>
+                    <div class="directory-item-box directory-coming-soon">
+                      <img
+                        src="./home/assets/coming-soon.png"
+                        class="directory-coming-soon-img"
+                      />
                     </div>
                   </div>
                 </div>
@@ -845,11 +895,34 @@
                     >
                       <div class="web-rings-wrapper">
                         <div class="web-ring-box">
+                          <div id="oc-webring-widget">
+                            <div id="oc-webring-title">
+                              <a href="https://tofutush.github.io/oc-webring"
+                                >OC Webring</a
+                              >
+                            </div>
+                            <div id="oc-webring-controls">
+                              <a
+                                href="https://tofutush.github.io/oc-webring/prev/?site=Kaneko's Space"
+                                >Previous</a
+                              >
+                              <a
+                                href="https://tofutush.github.io/oc-webring/rand/?site=Kaneko's Space"
+                                >Random</a
+                              >
+                              <a
+                                href="https://tofutush.github.io/oc-webring/next/?site=Kaneko's Space"
+                                >Next</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="web-ring-box webring-coming-soon">
                           <img
                             class="web-ring-img"
                             src="./home/assets/coming-soon.png"
                           />
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>

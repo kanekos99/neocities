@@ -316,7 +316,7 @@ a:hover {
   border-radius: 10px;
   cursor: pointer;
   object-fit: cover;
-  object-position: 0% auto;
+  object-position: center top;
 }
 
 .directory-img-box:hover {
@@ -362,6 +362,16 @@ a:hover {
   padding: 0px;
   margin: 0px;
   font-size: 1rem;
+}
+
+.directory-coming-soon {
+  display: block;
+  opacity: 0.5;
+}
+
+.directory-coming-soon-img {
+  width: 75%;
+  margin: auto;
 }
 
 .dotted-divider {
@@ -1001,6 +1011,22 @@ label.form-check-label:focus,
   opacity: 0.9;
 }
 
+#webrings-panel {
+  height: 100%;
+}
+
+.web-rings-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  height: 100%;
+}
+
+.web-rings-wrapper > *:last-child:nth-child(odd) {
+  grid-column: 1 / -1; 
+  /* justify-self: center; */
+}
+
 .web-ring-box {
   display: flex;
   justify-content: center;
@@ -1008,11 +1034,13 @@ label.form-check-label:focus,
   background-color: #d6eef37d;
   border: 2px dotted #67a9a97e;
   border-radius: 10px;
-  height: 290px;
+  height: 100%;
+  padding: 0px 10px;
 }
 
 .web-ring-img {
-  width: 20rem;
+  width: 100%;
+  opacity: 0.5;
 }
 
 /*---------------------------- Status speech bubble -----------------------------*/
@@ -1309,6 +1337,11 @@ label.form-check-label:focus,
     min-height: 70px;
   }
 
+  .announce-changelog-box {
+    height: auto;
+    overflow-y: visible;
+  }
+
   .announce-inner {
     flex-direction: column;
   }
@@ -1365,6 +1398,10 @@ label.form-check-label:focus,
     padding: 10px;
   }
 
+  .directory-coming-soon-img {
+    width: 100%;
+  }
+
   .neighbourhood-nav .nav-link {
     padding: 5px;
     font-size: 1rem;
@@ -1390,8 +1427,17 @@ label.form-check-label:focus,
     width: 100%;
   }
 
+  #webrings-panel {
+    padding-bottom: 0px;
+  }
+
+  .web-rings-wrapper {
+    display: block;
+  }
+
   .web-ring-box {
     height: 150px;
+    margin-bottom: 10px;
   }
 
   .web-ring-img {

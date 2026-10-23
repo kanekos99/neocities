@@ -1,0 +1,51 @@
+#oc-webring-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 12px;
+}
+
+#oc-webring-title {
+  font-weight: bold;
+  font-family: "Dosis";
+  color: #2b7379;
+  margin-bottom: 5px;
+}
+
+#oc-webring-title a {
+  color: #2b7379;
+  text-decoration: dotted underline #67a9a9 3px;
+}
+
+#oc-webring-title a:hover {
+  color: #2b7379;
+  text-decoration: solid underline #67a9a9 3px;
+}
+
+#oc-webring-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+}
+
+#oc-webring-controls a {
+  background-color: white;
+  padding: 1px 8px 1px 8px;
+  border-radius: 5px;
+  color: #67a9a9;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: lowercase;
+  box-shadow: 2px 2px #2b737975;
+}
+
+#oc-webring-controls a:hover {
+  background-color: #67a9a9;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
